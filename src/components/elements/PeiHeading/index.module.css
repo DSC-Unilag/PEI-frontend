@@ -1,0 +1,38 @@
+.purpleHeading,
+.heading {
+  height: 30px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+}
+.container {
+  display: inline-block;
+}
+.purpleHeading {
+  color: purple !important;
+}
+.purplehr,
+hr {
+  animation: animWidth 4s infinite;
+}
+.purplehr {
+  background-color: purple;
+}
+hr {
+  background-color: white;
+}
+.block {
+  text-align: center;
+}
+@keyframes animWidth {
+  0% {
+    width: 30%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 30%;
+  }
+}
