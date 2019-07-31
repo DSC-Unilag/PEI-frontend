@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import firebase from '../../base';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+import firebase from '../../base';
 import * as actions from '../reducers/actions';
 import PeiButton from '../elements/PeiButton';
 import PeiHeading from '../elements/PeiHeading';
 import PeiLabel from '../elements/PeiLabel';
 import Styles from './index.module.css';
 import PeiInput from '../elements/PeiInput';
+
 class SignUp extends Component {
   constructor(props) {
     super(props);
@@ -20,13 +21,15 @@ class SignUp extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
+
   handleSubmit(e) {
     const { signin, login } = this.props;
+    const { email, password } = this.state;
     e.preventDefault();
     if (signin) {
       firebase
         .auth()
-        .signInWithEmailAndPassword(this.state.email, this.state.password)
+        .signInWithEmailAndPassword(email, password)
         .then(u => {
           console.log(u);
           login();
@@ -40,18 +43,19 @@ class SignUp extends Component {
         .createUserWithEmailAndPassword(this.state.email, this.state.password)
         .then(u => {
           console.log(u);
-          login();
         })
         .catch(err => {
           console.log(err);
         });
     }
   }
+
   handleChange(e) {
     this.setState({
       [e.target.name]: e.target.value
     });
   }
+
   render() {
     const { signin, isLoggedIn } = this.props;
     return !isLoggedIn ? (
@@ -83,15 +87,6 @@ class SignUp extends Component {
                 name="password"
                 onKeyUp={this.handleChange}
               />
-              {/* {signin ? (
-            ''
-          ) : (
-            <>
-              <br />
-              <PeiLabel>Confirm Password</PeiLabel>
-              <PeiInput type="confirmPassword" onKeyUp={this.handleChange} />
-            </>
-          )} */}
               <PeiButton type="submit" onClick={this.handleSubmit}>
                 {signin ? 'Sign In' : 'Sign Up'}
               </PeiButton>

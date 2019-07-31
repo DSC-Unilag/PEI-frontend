@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import firebase from '../../base';
 import { Redirect } from 'react-router-dom';
+import firebase from '../../base';
+
 export default class Auth extends Component {
   constructor(props) {
     super(props);
@@ -8,13 +9,16 @@ export default class Auth extends Component {
       isLoggedIn: false
     };
   }
+
   componentDidMount() {
     firebase.auth().onAuthStateChanged(user => {
       this.setState({ isLoggedIn: !!user });
     });
   }
+
   render() {
-    return !this.state.isLoggedIn ? (
+    const { isLoggedIn } = this.state;
+    return !isLoggedIn ? (
       <Redirect from="/auth" to="/signup" />
     ) : (
       <Redirect from="/auth" to="/dashboard" />
