@@ -1,6 +1,7 @@
+/* eslint-disable no-nested-ternary */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import firebase from '../../base';
 import * as actions from '../reducers/actions';
@@ -17,7 +18,8 @@ class SignUp extends Component {
       // eslint-disable-next-line react/no-unused-state
       username: '',
       email: '',
-      password: ''
+      password: '',
+      isLoading: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -25,30 +27,49 @@ class SignUp extends Component {
 
   handleSubmit(e) {
     const { signin, login } = this.props;
-    const { email, password } = this.state;
+    const { email, password, isLoading } = this.state;
     e.preventDefault();
-    if (signin) {
-      console.log('flem');
-      firebase
-        .auth()
-        .signInWithEmailAndPassword(email, password)
-        .then(u => {
-          console.log(u);
-          login();
-        })
-        .catch(err => {
-          console.log(err);
+    if (!isLoading) {
+      if (signin) {
+        this.setState({
+          isLoading: true
         });
-    } else if (!signin) {
-      firebase
-        .auth()
-        .createUserWithEmailAndPassword(email, password)
-        .then(u => {
-          console.log(u);
-        })
-        .catch(err => {
-          console.log(err);
+        firebase
+          .auth()
+          .signInWithEmailAndPassword(email, password)
+          .then(u => {
+            this.setState({
+              isLoading: false
+            });
+            console.log(u);
+            login();
+          })
+          .catch(err => {
+            console.log(err);
+            this.setState({
+              isLoading: false
+            });
+          });
+      } else if (!signin) {
+        this.setState({
+          isLoading: true
         });
+        firebase
+          .auth()
+          .createUserWithEmailAndPassword(email, password)
+          .then(u => {
+            this.setState({
+              isLoading: false
+            });
+            console.log(u);
+          })
+          .catch(err => {
+            console.log(err);
+            this.setState({
+              isLoading: false
+            });
+          });
+      }
     }
   }
 
@@ -60,6 +81,7 @@ class SignUp extends Component {
 
   render() {
     const { signin = false, isLoggedIn } = this.props;
+    const { isLoading } = this.state;
     return !isLoggedIn ? (
       <>
         <div className={Styles.container}>
@@ -81,7 +103,7 @@ class SignUp extends Component {
                   <br />
                 </>
               )}
-              <PeiLabel>email</PeiLabel>
+              <PeiLabel>Email</PeiLabel>
               <PeiInput
                 type="email"
                 name="email"
@@ -98,9 +120,32 @@ class SignUp extends Component {
               />
               <br />
               <PeiButton type="submit" onClick={this.handleSubmit}>
-                {signin ? 'Sign In' : 'Sign Up'}
+                {!isLoading ? (
+                  signin ? (
+                    'Sign In'
+                  ) : (
+                    'Sign Up'
+                  )
+                ) : (
+                  <img
+                    src="images/Roll.svg"
+                    alt="roll"
+                    className={Styles.loader}
+                  />
+                )}
               </PeiButton>
             </form>
+            <div className={Styles.account}>
+              {signin ? (
+                <>
+                  Don{"'"}t have an account? <Link to="/signup">Sign Up</Link>
+                </>
+              ) : (
+                <>
+                  Already have an account? <Link to="/signin">Sign In</Link>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </>
@@ -121,7 +166,8 @@ const mapDispatchToProps = dispatch => ({
 
 SignUp.propTypes = {
   signin: PropTypes.bool,
-  isLoggedIn: PropTypes.bool
+  isLoggedIn: PropTypes.bool,
+  login: PropTypes.func.isRequired
 };
 SignUp.defaultProps = {
   signin: false,
