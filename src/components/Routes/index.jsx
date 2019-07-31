@@ -42,7 +42,8 @@ const Routes = ({ isLoggedIn }) => {
       <ProtectedRoute
         path="/dashboard"
         exact
-        auth={isLoggedIn}
+        auth={true}
+        //{isLoggedIn}
         component={Dashboard}
       />
       <Route path="/auth" exact component={Auth} />
