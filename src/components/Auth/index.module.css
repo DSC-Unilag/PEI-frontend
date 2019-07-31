@@ -15,7 +15,15 @@
   margin-left: auto;
   align-self: center;
   margin-right: 5rem;
-  background-color: rgb(65, 13, 65);
-  box-shadow: 5px 5px 20px rgb(65, 13, 65);
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 20px var(--primary-color);
   padding: 20px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

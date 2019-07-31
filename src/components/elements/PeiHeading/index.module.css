@@ -10,14 +10,14 @@
   display: inline-block;
 }
 .purpleHeading {
-  color: purple !important;
+  color: var(--primary-color) !important;
 }
 .purplehr,
 hr {
   animation: animWidth 4s infinite;
 }
 .purplehr {
-  background-color: purple;
+  background-color: var(--primary-color);
 }
 hr {
   background-color: white;
