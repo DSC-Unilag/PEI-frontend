@@ -13,4 +13,5 @@ code {
 }
 :root {
   --primary-color: rgb(65, 13, 65);
+  --primary-light: rgb(126, 14, 94);
 }
