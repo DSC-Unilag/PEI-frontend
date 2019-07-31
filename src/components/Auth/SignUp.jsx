@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import firebase from '../../base';
@@ -13,10 +14,10 @@ class SignUp extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      // eslint-disable-next-line react/no-unused-state
       username: '',
       email: '',
-      password: '',
-      confirmPassword: ''
+      password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -27,6 +28,7 @@ class SignUp extends Component {
     const { email, password } = this.state;
     e.preventDefault();
     if (signin) {
+      console.log('flem');
       firebase
         .auth()
         .signInWithEmailAndPassword(email, password)
@@ -40,7 +42,7 @@ class SignUp extends Component {
     } else if (!signin) {
       firebase
         .auth()
-        .createUserWithEmailAndPassword(this.state.email, this.state.password)
+        .createUserWithEmailAndPassword(email, password)
         .then(u => {
           console.log(u);
         })
@@ -57,7 +59,7 @@ class SignUp extends Component {
   }
 
   render() {
-    const { signin, isLoggedIn } = this.props;
+    const { signin = false, isLoggedIn } = this.props;
     return !isLoggedIn ? (
       <>
         <div className={Styles.container}>
@@ -74,19 +76,27 @@ class SignUp extends Component {
                     type="text"
                     name="username"
                     onKeyUp={this.handleChange}
+                    placeholder="Enter Username"
                   />
                   <br />
                 </>
               )}
               <PeiLabel>email</PeiLabel>
-              <PeiInput type="email" name="email" onKeyUp={this.handleChange} />
+              <PeiInput
+                type="email"
+                name="email"
+                onKeyUp={this.handleChange}
+                placeholder="Enter Email"
+              />
               <br />
               <PeiLabel>Password</PeiLabel>
               <PeiInput
                 type="password"
                 name="password"
                 onKeyUp={this.handleChange}
+                placeholder="Enter Password"
               />
+              <br />
               <PeiButton type="submit" onClick={this.handleSubmit}>
                 {signin ? 'Sign In' : 'Sign Up'}
               </PeiButton>
@@ -108,6 +118,16 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   login: () => dispatch({ type: actions.USER_LOGGED_IN })
 });
+
+SignUp.propTypes = {
+  signin: PropTypes.bool,
+  isLoggedIn: PropTypes.bool
+};
+SignUp.defaultProps = {
+  signin: false,
+  isLoggedIn: false
+};
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps

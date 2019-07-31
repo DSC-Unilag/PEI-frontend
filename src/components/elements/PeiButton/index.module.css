@@ -1,0 +1,21 @@
+.button,
+.purpleButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.button:hover,
+.purpleButton:hover {
+  cursor: pointer;
+}
+.button {
+  background-color: white;
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color);
+}
+.purpleButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid white !important;
+}
