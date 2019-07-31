@@ -6,19 +6,19 @@ export default class Auth extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoggedIn: false
+      usrLoggedIn: false
     };
   }
 
   componentDidMount() {
     firebase.auth().onAuthStateChanged(user => {
-      this.setState({ isLoggedIn: !!user });
+      this.setState({ usrLoggedIn: !!user });
     });
   }
 
   render() {
-    const { isLoggedIn } = this.state;
-    return !isLoggedIn ? (
+    const { usrLoggedIn } = this.state;
+    return !usrLoggedIn ? (
       <Redirect from="/auth" to="/signup" />
     ) : (
       <Redirect from="/auth" to="/dashboard" />

@@ -1,0 +1,9 @@
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px 20px;
+  text-align: left !important;
+  color: rgb(216, 205, 205);
+  font-size: 0.8em;
+}

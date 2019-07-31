@@ -7,9 +7,7 @@
   justify-content: center;
 }
 .form {
-  max-height: 450px;
   max-width: 400px;
-  height: 500px;
   width: 400px;
   border-radius: 15px;
   margin-left: auto;
@@ -19,8 +17,15 @@
   box-shadow: 5px 5px 20px var(--primary-color);
   padding: 20px;
   padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
-
+.form input {
+  display: block;
+  text-align: center;
+  width: 80%;
+}
 @media screen and (max-width: 600px) {
   .form {
     margin-left: 10px;
