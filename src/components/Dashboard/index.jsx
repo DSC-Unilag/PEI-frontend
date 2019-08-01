@@ -1,14 +1,18 @@
+/* eslint-disable react/button-has-type */
 import React, { Component } from 'react';
-import PeiHeading from '../elements/PeiHeading';
 import Nav from './Nav';
 import Styles from './index.module.css';
 
 export default class index extends Component {
-  state = {
-    showNav: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      showNav: false
+    };
+  }
 
   render() {
+    const { showNav } = this.state;
     return (
       <div className={Styles.container}>
         <header>
@@ -17,7 +21,7 @@ export default class index extends Component {
             <div className={Styles.btnline} />
             <div className={Styles.btnline} />
           </button>
-          <div className={this.state.showNav ? 'show' : 'close'}>
+          <div className={showNav ? 'show' : 'close'}>
             <Nav />
           </div>
         </header>

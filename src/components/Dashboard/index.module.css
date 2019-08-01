@@ -8,10 +8,13 @@
   border: 0.5px solid #fff;
   border-radius: 4px;
 }
+.menubtn:hover {
+  cursor: pointer;
+}
 .container {
   height: 100vh;
   width: 100vw;
-  background: #666666;
+  background: rgb(240, 237, 237);
   display: flex;
   justify-content: center;
   z-index: 0;
@@ -19,7 +22,7 @@
 
 .btnline {
   width: 25px;
-  height: 3px;
+  height: 2px;
   margin: 4px 0 4px 0;
   background: #fff;
 }
@@ -37,7 +40,7 @@
 
 .navgroup {
   padding: 0px;
-  margin: 50px 0px;
+  margin: 50px 10px;
 }
 
 .navitem {
@@ -49,21 +52,23 @@
 }
 .navitem:hover {
   background: #fff;
+  cursor: pointer;
   color: var(--primary-color);
 }
 
 .navimage {
-  border: 0.5px solid var(--primary-light);
+  /* border: 0.5px solid var(--primary-light);
   border-radius: 50px;
   height: 50px;
   width: 50px;
-  background: url(../../logo.svg);
+  background: url(../../logo.svg); */
 }
 
 .navaccount {
   border: 0.5px solid var(--primary-light);
   border-radius: 10px;
   align-items: center;
+  margin: 0 10px;
 }
 
 .navaccount > * {

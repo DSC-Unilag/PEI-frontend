@@ -10,6 +10,7 @@ import PeiHeading from '../elements/PeiHeading';
 import PeiLabel from '../elements/PeiLabel';
 import Styles from './index.module.css';
 import PeiInput from '../elements/PeiInput';
+import ErrorHandler from './errors';
 
 class SignUp extends Component {
   constructor(props) {
@@ -19,7 +20,8 @@ class SignUp extends Component {
       username: '',
       email: '',
       password: '',
-      isLoading: false
+      isLoading: false,
+      err: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -47,6 +49,7 @@ class SignUp extends Component {
           .catch(err => {
             console.log(err);
             this.setState({
+              err: ErrorHandler(err.code),
               isLoading: false
             });
           });
@@ -66,6 +69,7 @@ class SignUp extends Component {
           .catch(err => {
             console.log(err);
             this.setState({
+              err: ErrorHandler(err.code),
               isLoading: false
             });
           });
@@ -81,7 +85,7 @@ class SignUp extends Component {
 
   render() {
     const { signin = false, isLoggedIn } = this.props;
-    const { isLoading } = this.state;
+    const { isLoading, err } = this.state;
     return !isLoggedIn ? (
       <>
         <div className={Styles.container}>
@@ -119,6 +123,7 @@ class SignUp extends Component {
                 placeholder="Enter Password"
               />
               <br />
+              <p className={Styles.error}>{err}</p>
               <PeiButton type="submit" onClick={this.handleSubmit}>
                 {!isLoading ? (
                   signin ? (
