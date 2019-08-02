@@ -157,7 +157,7 @@ class SignUp extends Component {
     ) : (
       <Redirect
         from={signin ? '/signin' : '/signup'}
-        to={signin ? '/dashboard' : '/signin'}
+        to={signin ? '/dashboard/accounts' : '/signin'}
       />
     );
   }

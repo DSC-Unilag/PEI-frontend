@@ -21,7 +21,7 @@ export default class Auth extends Component {
     return !usrLoggedIn ? (
       <Redirect from="/auth" to="/signup" />
     ) : (
-      <Redirect from="/auth" to="/dashboard" />
+      <Redirect from="/auth" to="/dasboard/accounts" />
     );
   }
 }

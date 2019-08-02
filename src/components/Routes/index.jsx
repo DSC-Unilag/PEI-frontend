@@ -7,11 +7,18 @@ import Auth from '../Auth';
 import Dashboard from '../Dashboard';
 import TempLandingPage from '../TempLandingPage';
 
-const ProtectedRoute = ({ path, component: Component, auth, exact, to }) => (
+const ProtectedRoute = ({
+  path,
+  component: Component,
+  auth,
+  exact,
+  to,
+  ...props
+}) => (
   <Route
     path={path}
     exact={!!exact}
-    render={props =>
+    render={() =>
       auth ? <Component {...props} /> : <Redirect to={to || '/signup'} />
     }
   />
@@ -32,19 +39,39 @@ const Routes = props => {
   return (
     <>
       <Route path="/" exact component={TempLandingPage} />
-      <ProtectedRoute
+      {/* <ProtectedRoute
         path="/dashboard"
         exact
         auth={isLoggedIn}
         component={Dashboard}
+      /> */}
+      <Route path="/dashboard" exact auth={isLoggedIn} component={Dashboard} />
+      <Route
+        path="/dashboard/accounts"
+        exact
+        render={prop => <Dashboard {...prop} accounts />}
+      />
+      <Route
+        path="/dashboard/transfer"
+        exact
+        render={prop => <Dashboard {...prop} transfer />}
+      />
+      <Route
+        path="/dashboard/add"
+        exact
+        render={prop => <Dashboard {...prop} add />}
       />
       <Route path="/auth" exact component={Auth} />
-      <Route
-        path="/signup"
-        exact
-        render={prop => <Sign {...prop} signin={false} />}
-      />
+      <Route path="/signup" exact render={prop => <Sign {...prop} />} />
       <Route path="/signin" exact render={prop => <Sign {...prop} signin />} />
+      {/* <ProtectedRoute
+        path="/dashboard/accounts"
+        exact
+        auth={isLoggedIn}
+        component={Dashboard}
+        accounts
+        // render={prop => <Dashboard {...prop} accounts />}
+      /> */}
     </>
   );
 };
