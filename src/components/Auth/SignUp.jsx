@@ -11,6 +11,7 @@ import PeiLabel from '../elements/PeiLabel';
 import Styles from './index.module.css';
 import PeiInput from '../elements/PeiInput';
 import ErrorHandler from './errors';
+import { saveUser } from '../../api';
 
 class SignUp extends Component {
   constructor(props) {
@@ -44,6 +45,8 @@ class SignUp extends Component {
               isLoading: false
             });
             console.log(u);
+            // eslint-disable-next-line no-undef
+            localStorage.setItem('uid', u.user.uid);
             login();
           })
           .catch(err => {
@@ -63,6 +66,15 @@ class SignUp extends Component {
           .then(u => {
             this.setState({
               isLoading: false
+            });
+            // eslint-disable-next-line no-undef
+            fetch(saveUser, {
+              method: 'POST',
+              cors: true,
+              body: JSON.stringify({ ...this.state, uid: u.user.uid }),
+              headers: {
+                'Content-Type': 'application/json'
+              }
             });
             console.log(u);
           })
@@ -157,7 +169,7 @@ class SignUp extends Component {
     ) : (
       <Redirect
         from={signin ? '/signin' : '/signup'}
-        to={signin ? '/dashboard' : '/signin'}
+        to={signin ? '/dashboard/accounts' : '/signin'}
       />
     );
   }

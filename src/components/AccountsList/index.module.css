@@ -1,0 +1,53 @@
+.container,
+.containerFade {
+  border-radius: 12px;
+  max-height: auto;
+  width: 300px;
+  margin: 20px 0;
+  background-color: white;
+  color: var(--primary-color);
+  padding: 10px;
+  box-sizing: border-box;
+  animation: pop 0.6s ease-out;
+  padding-bottom: 10px;
+  box-shadow: 8px 10px 12px rgba(0, 0, 0, 0.3);
+}
+.container {
+  text-align: left;
+  padding-left: 15px;
+  transition: 0.3s;
+}
+.containerFade {
+  display: flex;
+  justify-content: center;
+  opacity: 0.6;
+  animation: pop 3s infinite;
+  position: absolute;
+  left: 21vw;
+  height: 200px;
+}
+.containerFade p {
+  align-self: center;
+}
+.container h1 {
+  font-size: 25px;
+}
+.container p > span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.container p > span::after {
+  content: ':';
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Styles from './index.module.css';
-var logo = "./undraw_convert_2gjv.png";
 
 const TempLandingPage = () => {
   return (

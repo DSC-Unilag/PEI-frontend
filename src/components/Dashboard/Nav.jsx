@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import firebse from '../../base';
 import * as actions from '../reducers/actions';
 import Styles from './index.module.css';
@@ -15,29 +15,27 @@ const Nav = ({ logUserOut, isLoggedin }) => {
       });
   };
   return !isLoggedin ? (
-    <div className={Styles.nav}>
+    <div>
       <div className={Styles.navaccount}>
-        <div className={Styles.navimage} />
         <div className={Styles.navemail}>MyAccoungt@mail.com</div>
       </div>
 
       <div className="nav-items-group">
         <ul className={Styles.navgroup}>
-          <li className={Styles.navitem}>Add Account</li>
+          <Link to="/dashboard/accounts" className={Styles.navitem}>
+            Accounts
+          </Link>
+          <Link to="/dashboard/add" className={Styles.navitem}>
+            Add Account
+          </Link>
           <li className={Styles.navitem}>Transfer funds</li>
-          <li className={Styles.navitem}>Transfer History</li>
         </ul>
       </div>
       <div className="nav-items-group">
         <ul className={Styles.navgroup}>
-          <li className={Styles.navitem}>Account settings</li>
+          {/* <li className={Styles.navitem}>Account settings</li> */}
           <li className={Styles.navitem}>
-            <div
-              onClick={logout}
-              onKeyPress={logout}
-              tabIndex="0"
-              role="button"
-            >
+            <div onClick={logout} onKeyUp={logout} tabIndex="0" role="button">
               Logout
             </div>
           </li>
