@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+  margin-top: 10px;
+  overflow-y: scroll !important;
+  max-height: 68vh;
+}

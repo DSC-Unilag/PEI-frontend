@@ -1,9 +1,18 @@
-.input {
+.input,
+.purpleInput {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid white;
+
   padding: 10px 20px;
   text-align: left !important;
-  color: rgb(216, 205, 205);
+
   font-size: 0.8em;
+}
+.input {
+  border-bottom: 1px solid white;
+  color: rgb(216, 205, 205);
+}
+.purpleInput {
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
