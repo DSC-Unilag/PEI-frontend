@@ -1,0 +1,27 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav_bar{
+    display: flex;
+    justify-content: flex-end;
+    height: 55px;
+    width: 100%;
+    background-color: darkslateblue;
+}
+.nav_bar a{
+    color: white;
+    margin: 15px 10px;
+    font-size: 16.5px;
+    text-decoration: none;
+}
+.nav_bar a:hover{
+    color: darkcyan;
+}
+.front_content{
+    width: 40%;
+    height: 200px;
+}
+.front_content img{
+    width: 100%;
+    height: auto;
+}
