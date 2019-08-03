@@ -1,5 +1,6 @@
-.menubtn {
-  position: absolute;
+.menubtn,
+.active {
+  position: fixed;
   background: none;
   top: 15px;
   left: 15px;
@@ -7,63 +8,87 @@
   padding: 4px;
   border: 0.5px solid #fff;
   border-radius: 4px;
+  transition: 0.3s;
+}
+.menubtn:hover,
+.active:hover {
+  cursor: pointer;
 }
 .container {
   height: 100vh;
   width: 100vw;
-  background: #666666;
+  background: white;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   z-index: 0;
 }
-
-.btnline {
+.active {
+  border-color: var(--primary-color) !important;
+}
+.btnline,
+.activebtnline {
   width: 25px;
-  height: 3px;
+  height: 2px;
   margin: 4px 0 4px 0;
   background: #fff;
 }
 
-.nav {
-  background-color: var(--primary-color);
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 25%;
-  height: 100%;
-  padding-top: 80px;
-  visibility: visible;
+.activebtnline {
+  background: var(--primary-color);
 }
 
+.nav {
+  background-color: var(--primary-color);
+  left: 0px;
+  top: 0px;
+  width: 25vw;
+  height: 100vh;
+  transition: 0.3s;
+  position: static;
+  z-index: 1;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.nav ul {
+  animation: appear 0.3s forwards;
+}
+.nav a {
+  text-decoration: none;
+}
+.show {
+  transform: translateX(0);
+}
 .navgroup {
   padding: 0px;
-  margin: 50px 0px;
+  margin: 50px 30px;
 }
 
 .navitem {
   display: block;
   border-bottom: 0.5px solid var(--primary-light);
-  padding: 10px 0px 10px 10px;
+  padding: 15px 0px 15px 10px;
   color: #fff;
   font-weight: bold;
+  /* margin-bottom: 10px; */
 }
 .navitem:hover {
   background: #fff;
+  cursor: pointer;
   color: var(--primary-color);
 }
 
 .navimage {
-  border: 0.5px solid var(--primary-light);
+  /* border: 0.5px solid var(--primary-light);
   border-radius: 50px;
   height: 50px;
   width: 50px;
-  background: url(../../logo.svg);
+  background: url(../../logo.svg); */
 }
 
 .navaccount {
   border: 0.5px solid var(--primary-light);
   border-radius: 10px;
   align-items: center;
+  margin: 80px 10px;
 }
 
 .navaccount > * {
@@ -76,5 +101,48 @@
 
 .navemail {
   margin: 10px 0px;
+  /* box-sizing: content-box; */
   text-align: center;
+  /* word-wrap: wrap; */
+}
+.main {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(30, 41, 66);
+}
+.hide {
+  transition: 0.3s ease-in-out;
+  /* transform: translateX(-1000px); */
+  width: 0;
+}
+.hide ul {
+  animation: disappear 0.2s;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .nav {
+    width: 80vw;
+    position: fixed;
+  }
+  .hide {
+    position: fixed;
+  }
+  .hide ul {
+    visibility: hidden;
+  }
 }

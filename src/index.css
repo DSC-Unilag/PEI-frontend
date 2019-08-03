@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -12,6 +13,6 @@ code {
     monospace;
 }
 :root {
-  --primary-color: rgb(65, 13, 65);
-  --primary-light: rgb(126, 14, 94);
+  --primary-color: #1e2942;
+  --primary-light: #ffffff;
 }
