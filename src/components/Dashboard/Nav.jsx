@@ -16,9 +16,9 @@ const Nav = ({ logUserOut, isLoggedin }) => {
   };
   return !isLoggedin ? (
     <div>
-      <div className={Styles.navaccount}>
+      {/* <div className={Styles.navaccount}>
         <div className={Styles.navemail}>MyAccoungt@mail.com</div>
-      </div>
+      </div> */}
 
       <div className="nav-items-group">
         <ul className={Styles.navgroup}>

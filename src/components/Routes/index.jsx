@@ -75,12 +75,11 @@ const Routes = props => {
         accounts
         render={prop => <Dashboard {...prop} accounts />}
       />
-      <ProtectedRoute
+      <Route
         path="/dashboard/transfer"
         exact
-        auth={isLoggedIn}
-        component={Dashboard}
-        // accounts
+        // transfer
+        // component={Dashboard}
         render={prop => <Dashboard {...prop} transfer />}
       />
     </>

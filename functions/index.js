@@ -74,6 +74,30 @@ module.exports.getAllAccounts = functions.https.onRequest((req, res) => {
   });
 });
 
+module.exports.getUserByName = functions.https.onRequest((req, res) => {
+  cors(req, res, () => {
+    const { username } = req.body;
+    db.collection('users')
+      .where('username', '==', username)
+      .get()
+      .then(snapshot => {
+        const data = snapshot.docs.map(doc => doc.data());
+        return res.status(200).json({
+          status: 'success',
+          message: 'Profile Found',
+          data
+        });
+      })
+      .catch(error => {
+        return res.status(500).json({
+          status: 'error',
+          message: 'Something went wrong',
+          error: error.message
+        });
+      });
+  });
+});
+
 module.exports.createAccount = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
     const { name, card_number, cvv, exp_date, uid, acc_type } = req.body;
