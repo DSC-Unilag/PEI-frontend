@@ -35,12 +35,7 @@ const Nav = ({ logUserOut, isLoggedin }) => {
         <ul className={Styles.navgroup}>
           {/* <li className={Styles.navitem}>Account settings</li> */}
           <li className={Styles.navitem}>
-            <div
-              onClick={logout}
-              onKeyPress={logout}
-              tabIndex="0"
-              role="button"
-            >
+            <div onClick={logout} onKeyUp={logout} tabIndex="0" role="button">
               Logout
             </div>
           </li>

@@ -11,3 +11,7 @@
   margin: 0 0 30px 0;
   width: 90% !important;
 }
+.loader {
+  height: 20px;
+  width: 20px;
+}
