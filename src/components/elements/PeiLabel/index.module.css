@@ -1,6 +1,12 @@
-.label {
-  color: white;
+.label,
+.purpleLabel {
   display: block;
   text-align: left;
   font-size: 19px;
+}
+.label {
+  color: white;
+}
+.purpleLabel {
+  color: var(--primary-color);
 }

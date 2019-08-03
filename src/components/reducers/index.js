@@ -1,4 +1,5 @@
-import * as actions from '../reducers/actions';
+import * as actions from './actions';
+
 const initialState = {
   isLoggedIn: false
 };
@@ -8,6 +9,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         isLoggedIn: true
+      };
+    case actions.USER_LOGGED_OUT:
+      return {
+        ...state,
+        isLoggedIn: false
       };
     default:
       return state;

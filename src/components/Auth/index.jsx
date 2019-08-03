@@ -1,27 +1,34 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 import firebase from '../../base';
+import * as actions from '../reducers/actions';
 
-export default class Auth extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      usrLoggedIn: false
-    };
-  }
-
+class Auth extends Component {
   componentDidMount() {
+    const { login } = this.props;
     firebase.auth().onAuthStateChanged(user => {
-      this.setState({ usrLoggedIn: !!user });
+      login();
     });
   }
 
   render() {
-    const { usrLoggedIn } = this.state;
-    return !usrLoggedIn ? (
+    const { isLoggedIn } = this.props;
+    return !isLoggedIn ? (
       <Redirect from="/auth" to="/signup" />
     ) : (
-      <Redirect from="/auth" to="/dashboard" />
+      <Redirect from="/auth" to="/dasboard/accounts" />
     );
   }
 }
+const mapStateToProps = state => ({
+  isLoggedIn: state.isLoggedIn
+});
+const mapDispatchToProps = dispatch => ({
+  login: () => dispatch({ type: actions.USER_LOGGED_IN })
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Auth);

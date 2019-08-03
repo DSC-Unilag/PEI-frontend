@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import {
-  Route
-  // Redirect
-} from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import Sign from '../Auth/SignUp';
 import Auth from '../Auth';
 import Dashboard from '../Dashboard';
@@ -12,50 +9,79 @@ import TempLandingPage from '../TempLandingPage';
 
 const ProtectedRoute = ({
   path,
-  component,
+  component: Component,
   auth,
-  exact
-  // to
-}) =>
-  auth ? (
-    <Route path={path} exact={!!exact} component={component} />
-  ) : (
-    // <Redirect to={to || '/signup'} />
-    ''
-  );
+  exact,
+  to,
+  ...props
+}) => (
+  <Route
+    path={path}
+    exact={!!exact}
+    render={() =>
+      auth ? <Component {...props} /> : <Redirect to={to || '/signup'} />
+    }
+  />
+);
 ProtectedRoute.propTypes = {
   path: PropTypes.string.isRequired,
   component: PropTypes.func.isRequired,
   auth: PropTypes.bool.isRequired,
-  exact: PropTypes.bool
-  // to: PropTypes.string
+  exact: PropTypes.bool,
+  to: PropTypes.string
 };
 ProtectedRoute.defaultProps = {
-  exact: false
-  // to: '/signup'
+  exact: false,
+  to: '/signup'
 };
-const Routes = ({ isLoggedIn }) => {
-  console.log(isLoggedIn);
+const Routes = props => {
+  const { isLoggedIn } = props;
   return (
     <>
       <Route path="/" exact component={TempLandingPage} />
-      <ProtectedRoute
+      {/* <ProtectedRoute
         path="/dashboard"
         exact
-        auth={true}
-        //{isLoggedIn}
+        auth={isLoggedIn}
         component={Dashboard}
+      /> */}
+      <Route path="/dashboard" exact auth={isLoggedIn} component={Dashboard} />
+      {/* <Route
+        path="/dashboard/accounts"
+        exact
+        render={prop => <Dashboard {...prop} accounts />}
+      /> */}
+      {/* <Route
+        path="/dashboard/transfer"
+        exact
+        render={prop => <Dashboard {...prop} transfer />}
+      /> */}
+      <ProtectedRoute
+        path="/dashboard/add"
+        component={Dashboard}
+        add
+        auth={isLoggedIn}
+        exact
+        render={prop => <Dashboard {...prop} add />}
       />
       <Route path="/auth" exact component={Auth} />
-      <Route
-        path="/signup"
+      <Route path="/signup" exact render={prop => <Sign {...prop} />} />
+      <Route path="/signin" exact render={prop => <Sign {...prop} signin />} />
+      <ProtectedRoute
+        path="/dashboard/accounts"
         exact
-        render={props => <Sign {...props} signin={false} />}
+        auth={isLoggedIn}
+        component={Dashboard}
+        accounts
+        render={prop => <Dashboard {...prop} accounts />}
       />
-      <Route
-        path="/signin"
+      <ProtectedRoute
+        path="/dashboard/transfer"
         exact
-        render={props => <Sign {...props} signin />}
+        auth={isLoggedIn}
+        component={Dashboard}
+        // accounts
+        render={prop => <Dashboard {...prop} transfer />}
       />
     </>
   );
