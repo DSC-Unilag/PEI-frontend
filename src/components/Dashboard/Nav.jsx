@@ -28,7 +28,9 @@ const Nav = ({ logUserOut, isLoggedin }) => {
           <Link to="/dashboard/add" className={Styles.navitem}>
             Add Account
           </Link>
-          <li className={Styles.navitem}>Transfer funds</li>
+          <Link to="/dashboard/transfer" className={Styles.navitem}>
+            Transfer Funds
+          </Link>
         </ul>
       </div>
       <div className="nav-items-group">
