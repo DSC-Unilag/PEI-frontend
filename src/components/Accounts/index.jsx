@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Styles from './index.module.css';
 import FlexContainer from '../FlexContainer';
 import AccountsList from '../AccountsList';
 import AddAccount from '../AddAccount';
+import Transfer from '../Transfer';
 import { getAllAccounts } from '../../api';
 
 class User extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoaded: false,
       data: null
     };
   }
 
   componentDidMount() {
-    const dataBody = { user_id: localStorage.getItem('uid') };
+    const { uid } = this.props;
+    // eslint-disable-next-line no-undef
+    const dataBody = { user_id: uid };
+    // fetch()
+    // eslint-disable-next-line no-undef
     fetch(getAllAccounts, {
       method: 'POST',
       cors: true,
@@ -29,14 +34,16 @@ class User extends Component {
   }
 
   render() {
-    const { accounts, add } = this.props;
+    const { accounts, add, transfer } = this.props;
     const { data } = this.state;
+    console.log(data);
     return (
       <>
         <div className={Styles.user}>
           <h1>
-            {accounts && `Akin${"'"}s Accounts`}
+            {accounts && `Your Accounts`}
             {add && 'Add Account'}
+            {transfer && 'Transfer Funds'}
           </h1>
           <p>Akinwunmi Aguda</p>
         </div>
@@ -58,9 +65,16 @@ class User extends Component {
             <AddAccount />
           </FlexContainer>
         )}
+        {transfer && (
+          <FlexContainer>
+            <Transfer />
+          </FlexContainer>
+        )}
       </>
     );
   }
 }
-
-export default User;
+const mapStateToProps = state => ({
+  uid: state.uid
+});
+export default connect(mapStateToProps)(User);

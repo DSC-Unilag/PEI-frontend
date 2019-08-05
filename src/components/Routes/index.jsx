@@ -79,8 +79,8 @@ const Routes = props => {
         path="/dashboard/transfer"
         exact
         auth={isLoggedIn}
+        transfer
         component={Dashboard}
-        // accounts
         render={prop => <Dashboard {...prop} transfer />}
       />
     </>

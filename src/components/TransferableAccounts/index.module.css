@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  color: white !important;
+  margin-top: 20px;
+}
+.container:hover {
+  cursor: pointer;
+}
+.name {
+  padding: 15px;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
+}
+.acc {
+  padding: 15px;
+  background-color: var(--primary-color);
+  /* margin-left: auto; */
+  border-radius: 0 8px 8px 0;
+}
