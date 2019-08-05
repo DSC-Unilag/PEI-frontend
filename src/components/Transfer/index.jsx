@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PeiInput from '../elements/PeiInput';
 import PeiLabel from '../elements/PeiLabel';
 import PeiButton from '../elements/PeiButton';
@@ -28,6 +29,7 @@ class Transfer extends Component {
 
   validateUser(e) {
     const { username } = this.state;
+    const { uid } = this.props;
     e.preventDefault();
     this.setState({
       isValidating: true
@@ -59,7 +61,7 @@ class Transfer extends Component {
             });
           })
           .then(r => {
-            const dataBody = { user_id: localStorage.getItem('uid') };
+            const dataBody = { user_id: uid };
             fetch(getAllAccounts, {
               method: 'POST',
               cors: true,
@@ -77,11 +79,6 @@ class Transfer extends Component {
                 });
               });
           });
-        // this.setState({
-        //   isValidating: false,
-        //   senderValidated: true,
-        //   recipientData: data.data
-        // });
       })
       .catch(err => {
         this.setState({
@@ -151,5 +148,8 @@ class Transfer extends Component {
     );
   }
 }
-
-export default Transfer;
+const mapStateToProps = state => ({
+  isLoggedIn: state.isLoggedIn,
+  uid: state.uid
+});
+export default connect(mapStateToProps)(Transfer);

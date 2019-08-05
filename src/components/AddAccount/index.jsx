@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Styles from './index.module.css';
 import PeiButton from '../elements/PeiButton';
 import PeiInput from '../elements/PeiInput';
@@ -26,8 +27,9 @@ class LoadAccounts extends Component {
   }
 
   handleSubmit(e) {
+    const { uid } = this.props;
     e.preventDefault();
-    const body = { ...this.state, uid: localStorage.getItem('uid') };
+    const body = { ...this.state, uid: uid };
     this.setState({
       isLoading: true
     });
@@ -139,4 +141,7 @@ class LoadAccounts extends Component {
     );
   }
 }
-export default LoadAccounts;
+const mapStateToProps = state => ({
+  uid: state.uid
+});
+export default connect(mapStateToProps)(LoadAccounts);
