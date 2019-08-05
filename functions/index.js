@@ -1,3 +1,4 @@
+const admin = require('firebase-admin');
 const functions = require('firebase-functions');
 const firebase = require('firebase');
 const cors = require('cors')({ origin: true });
@@ -70,7 +71,6 @@ module.exports.getAllAccounts = functions.https.onRequest((req, res) => {
           message: 'Something went wrong',
           error: error.message
         });
-<<<<<<< HEAD
       });
   });
 });
@@ -95,8 +95,6 @@ module.exports.getUserByName = functions.https.onRequest((req, res) => {
           message: 'Something went wrong',
           error: error.message
         });
-=======
->>>>>>> da48278fb76d42d55e334c8ee9631c43d3bc7629
       });
   });
 });
