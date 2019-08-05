@@ -50,6 +50,7 @@
 }
 .nav ul {
   animation: appear 0.3s forwards;
+  margin-top: 100px;
 }
 .nav a {
   text-decoration: none;
@@ -117,6 +118,7 @@
 }
 .hide ul {
   animation: disappear 0.2s;
+  margin-top: 100px;
 }
 @keyframes appear {
   0% {
@@ -137,9 +139,11 @@
 @media screen and (max-width: 850px) {
   .nav {
     width: 80vw;
+    height: 100vh;
     position: fixed;
   }
   .hide {
+    height: 100vh;
     position: fixed;
   }
   .hide ul {

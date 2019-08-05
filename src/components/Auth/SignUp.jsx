@@ -1,4 +1,5 @@
 /* eslint-disable no-nested-ternary */
+/* eslint-env browser */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Redirect, Link } from 'react-router-dom';
@@ -41,13 +42,31 @@ class SignUp extends Component {
           .auth()
           .signInWithEmailAndPassword(email, password)
           .then(u => {
+            console.log(u.user.uid);
+            firebase
+              .auth()
+              .currentUser.getIdToken(true)
+              .then(idToken => {
+                // send token to backend
+                if (localStorage.getItem('token')) {
+                  localStorage.removeItem('token');
+                  localStorage.setItem('token', idToken);
+                } else {
+                  localStorage.setItem('token', idToken);
+                }
+                this.setState({
+                  isLoading: false
+                });
+                login(u.user.uid);
+              })
+              .catch(err => {
+                throw err;
+              });
             this.setState({
               isLoading: false
             });
-            console.log(u);
             // eslint-disable-next-line no-undef
-            localStorage.setItem('uid', u.user.uid);
-            login();
+            // localStorage.setItem('uid', u.user.uid);
           })
           .catch(err => {
             console.log(err);
@@ -178,7 +197,7 @@ const mapStateToProps = state => ({
   isLoggedIn: state.isLoggedIn
 });
 const mapDispatchToProps = dispatch => ({
-  login: () => dispatch({ type: actions.USER_LOGGED_IN })
+  login: uid => dispatch({ type: actions.USER_LOGGED_IN, payload: uid })
 });
 
 SignUp.propTypes = {

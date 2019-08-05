@@ -1,3 +1,5 @@
+/*
+eslint-env browser */
 import React from 'react';
 import { connect } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
@@ -11,14 +13,15 @@ const Nav = ({ logUserOut, isLoggedin }) => {
       .auth()
       .signOut()
       .then(() => {
+        localStorage.removeItem('token');
         logUserOut();
       });
   };
   return !isLoggedin ? (
     <div>
-      <div className={Styles.navaccount}>
+      {/* <div className={Styles.navaccount}>
         <div className={Styles.navemail}>MyAccoungt@mail.com</div>
-      </div>
+      </div> */}
 
       <div className="nav-items-group">
         <ul className={Styles.navgroup}>
@@ -28,7 +31,9 @@ const Nav = ({ logUserOut, isLoggedin }) => {
           <Link to="/dashboard/add" className={Styles.navitem}>
             Add Account
           </Link>
-          <li className={Styles.navitem}>Transfer funds</li>
+          <Link to="/dashboard/transfer" className={Styles.navitem}>
+            Transfer Funds
+          </Link>
         </ul>
       </div>
       <div className="nav-items-group">
