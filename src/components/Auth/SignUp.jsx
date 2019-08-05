@@ -42,12 +42,10 @@ class SignUp extends Component {
           .auth()
           .signInWithEmailAndPassword(email, password)
           .then(u => {
-            console.log(u.user.uid);
             firebase
               .auth()
               .currentUser.getIdToken(true)
               .then(idToken => {
-                // send token to backend
                 if (localStorage.getItem('token')) {
                   localStorage.removeItem('token');
                   localStorage.setItem('token', idToken);
@@ -65,11 +63,8 @@ class SignUp extends Component {
             this.setState({
               isLoading: false
             });
-            // eslint-disable-next-line no-undef
-            // localStorage.setItem('uid', u.user.uid);
           })
           .catch(err => {
-            console.log(err);
             this.setState({
               err: ErrorHandler(err.code),
               isLoading: false
@@ -95,10 +90,8 @@ class SignUp extends Component {
                 'Content-Type': 'application/json'
               }
             });
-            console.log(u);
           })
           .catch(err => {
-            console.log(err);
             this.setState({
               err: ErrorHandler(err.code),
               isLoading: false

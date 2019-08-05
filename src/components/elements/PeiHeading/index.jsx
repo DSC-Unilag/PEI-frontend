@@ -1,5 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Styles from './index.module.css';
+
 const PeiHeading = ({ children, purple }) => (
   <div className={Styles.block}>
     <div className={Styles.container}>
@@ -10,4 +12,13 @@ const PeiHeading = ({ children, purple }) => (
     </div>
   </div>
 );
+
+PeiHeading.propTypes = {
+  children: PropTypes.string.isRequired,
+  purple: PropTypes.bool
+};
+
+PeiHeading.defaultProps = {
+  purple: false
+};
 export default PeiHeading;

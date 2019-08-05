@@ -1,0 +1,67 @@
+[debug] [2019-08-05T21:58:28.341Z] ----------------------------------------------------------------------
+[debug] [2019-08-05T21:58:28.347Z] Command:       /home/akin/.nvm/versions/node/v12.1.0/bin/node /home/akin/.nvm/versions/node/v12.1.0/bin/firebase --project peifrontend serve --only functions
+[debug] [2019-08-05T21:58:28.347Z] CLI Version:   7.2.1
+[debug] [2019-08-05T21:58:28.347Z] Platform:      linux
+[debug] [2019-08-05T21:58:28.348Z] Node Version:  v12.1.0
+[debug] [2019-08-05T21:58:28.386Z] Time:          Mon Aug 05 2019 22:58:28 GMT+0100 (West Africa Standard Time)
+[debug] [2019-08-05T21:58:28.386Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-05T21:58:28.483Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-05T21:58:28.484Z] > authorizing via signed-in user
+[debug] [2019-08-05T21:58:28.485Z] [iam] checking project peifrontend for permissions ["firebase.projects.get"]
+[debug] [2019-08-05T21:58:28.489Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-05T21:58:28.489Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-05T21:58:28.968Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-05T21:58:29.016Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/peifrontend:testIamPermissions  
+
+[debug] [2019-08-05T21:58:30.599Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-05T21:58:30.603Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/peifrontend  
+ 
+[debug] [2019-08-05T21:58:31.250Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-08-05T21:58:31.304Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/peifrontend/adminSdkConfig  
+ 
+[debug] [2019-08-05T21:58:31.754Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/home/akin/Documents/pei-frontend/functions" for Cloud Functions...
+[debug] [2019-08-05T21:58:32.553Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[debug] [2019-08-05T21:58:32.554Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T21:58:32.601Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T21:58:32.629Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T21:58:32.631Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions: [http] function saveUser initialized (http://localhost:5000/peifrontend/us-central1/saveUser).
+[info] ✔  functions: [http] function getAllAccounts initialized (http://localhost:5000/peifrontend/us-central1/getAllAccounts).
+[info] ✔  functions: [http] function getUserByName initialized (http://localhost:5000/peifrontend/us-central1/getUserByName).
+[info] ✔  functions: [http] function createAccount initialized (http://localhost:5000/peifrontend/us-central1/createAccount).
+[info] ✔  functions: [http] function validateToken initialized (http://localhost:5000/peifrontend/us-central1/validateToken).
+[debug] [2019-08-05T22:04:32.781Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:04:33.347Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:04:33.349Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:04:33.353Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:04:33.354Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:04:33.356Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:04:33.888Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:04:33.888Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:04:33.888Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:04:33.937Z] {"socketPath":"/tmp/firebase_emulator_invocation_3367.sock"}
+[debug] [2019-08-05T22:04:33.948Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_3367.sock"}
+[debug] [2019-08-05T22:04:33.967Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:04:33.979Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:04:33.987Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:04:34.472Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:04:34.476Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:04:34.478Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:04:34.486Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:04:34.487Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:04:35.047Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:04:35.048Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:04:35.048Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:04:35.060Z] {"socketPath":"/tmp/firebase_emulator_invocation_3379.sock"}
+[debug] [2019-08-05T22:04:35.062Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_3379.sock"}
+[debug] [2019-08-05T22:04:35.189Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:04:35.510Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s

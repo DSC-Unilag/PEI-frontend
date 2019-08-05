@@ -76,15 +76,6 @@
   cursor: pointer;
   color: var(--primary-color);
 }
-
-.navimage {
-  /* border: 0.5px solid var(--primary-light);
-  border-radius: 50px;
-  height: 50px;
-  width: 50px;
-  background: url(../../logo.svg); */
-}
-
 .navaccount {
   border: 0.5px solid var(--primary-light);
   border-radius: 10px;
@@ -124,19 +115,30 @@
   0% {
     opacity: 0;
   }
+  90% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
 }
 @keyframes disappear {
   0% {
-    opacity: 1;
+    opacity: 0;
+    visibility: hidden;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 @media screen and (max-width: 850px) {
+  .nav {
+    width: 40vw;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 550px) {
   .nav {
     width: 80vw;
     height: 100vh;

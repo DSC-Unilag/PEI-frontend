@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Styles from './index.module.css';
 import FlexContainer from '../FlexContainer';
 import AccountsList from '../AccountsList';
@@ -19,7 +20,6 @@ class User extends Component {
     const { uid } = this.props;
     // eslint-disable-next-line no-undef
     const dataBody = { user_id: uid };
-    // fetch()
     // eslint-disable-next-line no-undef
     fetch(getAllAccounts, {
       method: 'POST',
@@ -36,7 +36,6 @@ class User extends Component {
   render() {
     const { accounts, add, transfer } = this.props;
     const { data } = this.state;
-    console.log(data);
     return (
       <>
         <div className={Styles.user}>
@@ -77,4 +76,16 @@ class User extends Component {
 const mapStateToProps = state => ({
   uid: state.uid
 });
+User.propTypes = {
+  uid: PropTypes.string.isRequired,
+  accounts: PropTypes.bool,
+  add: PropTypes.bool,
+  transfer: PropTypes.bool
+};
+
+User.defaultProps = {
+  accounts: false,
+  add: false,
+  transfer: false
+};
 export default connect(mapStateToProps)(User);
