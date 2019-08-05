@@ -1,3 +1,5 @@
+/*
+eslint-env browser */
 import React from 'react';
 import { connect } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
@@ -11,6 +13,7 @@ const Nav = ({ logUserOut, isLoggedin }) => {
       .auth()
       .signOut()
       .then(() => {
+        localStorage.removeItem('token');
         logUserOut();
       });
   };

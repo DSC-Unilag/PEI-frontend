@@ -45,6 +45,6 @@ AccountsList.defaultProps = {
   name: null,
   exp_date: null,
   acc_type: null,
-  cvv: PropTypes.string
+  cvv: null
 };
 export default AccountsList;
