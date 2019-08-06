@@ -70,7 +70,7 @@ module.exports.getUser = functions.https.onRequest((req, res) => {
         const data = doc.data();
         return res.status(200).json({
           status: 'success',
-          message: 'User Details Retrieved',
+          message: 'Profile Retrieved',
           data
         });
       })
@@ -113,30 +113,6 @@ module.exports.getUserByName = functions.https.onRequest((req, res) => {
     const { username } = req.body;
     db.collection('users')
       .where('username', '==', username)
-      .get()
-      .then(snapshot => {
-        const data = snapshot.docs.map(doc => doc.data());
-        return res.status(200).json({
-          status: 'success',
-          message: 'Profile Found',
-          data
-        });
-      })
-      .catch(error => {
-        return res.status(500).json({
-          status: 'error',
-          message: 'Something went wrong',
-          error: error.message
-        });
-      });
-  });
-});
-
-module.exports.getUserById = functions.https.onRequest((req, res) => {
-  cors(req, res, () => {
-    const { uid } = req.body;
-    db.collection('users')
-      .where('uid', '==', uid)
       .get()
       .then(snapshot => {
         const data = snapshot.docs.map(doc => doc.data());
