@@ -6,13 +6,14 @@ import FlexContainer from '../FlexContainer';
 import AccountsList from '../AccountsList';
 import AddAccount from '../AddAccount';
 import Transfer from '../Transfer';
-import { getAllAccounts } from '../../api';
+import { getAllAccounts, getUserById } from '../../api';
 
 class User extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null
+      data: null,
+      userData: null
     };
   }
 
@@ -20,6 +21,24 @@ class User extends Component {
     const { uid } = this.props;
     // eslint-disable-next-line no-undef
     const dataBody = { user_id: uid };
+    // eslint-disable-next-line no-undef
+    fetch(getUserById, {
+      method: 'POST',
+      cors: true,
+      body: JSON.stringify({ uid }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(res => res.json())
+      .then(ress => {
+        console.log(uid);
+        console.log(ress);
+      })
+      .catch(err => {
+        throw err;
+      });
+
     // eslint-disable-next-line no-undef
     fetch(getAllAccounts, {
       method: 'POST',
@@ -44,7 +63,7 @@ class User extends Component {
             {add && 'Add Account'}
             {transfer && 'Transfer Funds'}
           </h1>
-          <p>Akinwunmi Aguda</p>
+          <p>Hello Akinwunmi Aguda</p>
         </div>
         {accounts && (
           <FlexContainer>

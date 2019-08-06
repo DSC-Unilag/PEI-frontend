@@ -65,3 +65,865 @@
 [debug] [2019-08-05T22:04:35.189Z] [runtime-status] Ephemeral server used! {}
 [debug] [2019-08-05T22:04:35.510Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:47:01.239Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:47:01.768Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:47:01.769Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:47:01.774Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:47:01.776Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:47:01.777Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:47:02.385Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:47:02.386Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:47:02.386Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:47:02.417Z] {"socketPath":"/tmp/firebase_emulator_invocation_5063.sock"}
+[debug] [2019-08-05T22:47:02.419Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5063.sock"}
+[debug] [2019-08-05T22:47:02.436Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:47:02.445Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:47:02.451Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:47:02.933Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:47:02.934Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:47:02.938Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:47:02.939Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:47:02.941Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:47:03.587Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:47:03.588Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:47:03.589Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:47:03.633Z] {"socketPath":"/tmp/firebase_emulator_invocation_5074.sock"}
+[debug] [2019-08-05T22:47:03.635Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5074.sock"}
+[debug] [2019-08-05T22:47:03.678Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:47:03.874Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:48:46.706Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:48:47.260Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:48:47.262Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:48:47.268Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:48:47.268Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:48:47.269Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:48:47.806Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:48:47.806Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:48:47.807Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:48:47.819Z] {"socketPath":"/tmp/firebase_emulator_invocation_5152.sock"}
+[debug] [2019-08-05T22:48:47.820Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5152.sock"}
+[debug] [2019-08-05T22:48:47.833Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:48:47.845Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:48:47.851Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:48:48.323Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:48:48.324Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:48:48.327Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:48:48.329Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:48:48.330Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:48:48.879Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:48:48.879Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:48:48.879Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:48:48.891Z] {"socketPath":"/tmp/firebase_emulator_invocation_5163.sock"}
+[debug] [2019-08-05T22:48:48.893Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5163.sock"}
+[debug] [2019-08-05T22:48:48.945Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:48:49.143Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:49:59.306Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:49:59.886Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:49:59.887Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:49:59.891Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:49:59.893Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:49:59.895Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:50:00.427Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:50:00.427Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:50:00.428Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:50:00.454Z] {"socketPath":"/tmp/firebase_emulator_invocation_5242.sock"}
+[debug] [2019-08-05T22:50:00.456Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5242.sock"}
+[debug] [2019-08-05T22:50:00.470Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:50:00.478Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:50:00.484Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:50:00.959Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:50:00.960Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:50:00.964Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:50:00.965Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:50:00.967Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:50:01.521Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:50:01.521Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:50:01.522Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:50:01.533Z] {"socketPath":"/tmp/firebase_emulator_invocation_5254.sock"}
+[debug] [2019-08-05T22:50:01.535Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5254.sock"}
+[debug] [2019-08-05T22:50:01.570Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:50:01.769Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:50:21.695Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:50:22.265Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:50:22.266Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:50:22.270Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:50:22.271Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:50:22.273Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:50:22.807Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:50:22.807Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:50:22.808Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:50:22.826Z] {"socketPath":"/tmp/firebase_emulator_invocation_5296.sock"}
+[debug] [2019-08-05T22:50:22.827Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5296.sock"}
+[debug] [2019-08-05T22:50:22.850Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:50:22.861Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:50:22.867Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:50:23.341Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:50:23.342Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:50:23.346Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:50:23.348Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:50:23.349Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:50:23.896Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:50:23.897Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:50:23.897Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:50:23.915Z] {"socketPath":"/tmp/firebase_emulator_invocation_5307.sock"}
+[debug] [2019-08-05T22:50:23.918Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5307.sock"}
+[debug] [2019-08-05T22:50:23.952Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:50:24.151Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:51:24.320Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:51:24.788Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:51:24.789Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:24.796Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:24.796Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:24.796Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:25.307Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:25.307Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:51:25.308Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:51:25.327Z] {"socketPath":"/tmp/firebase_emulator_invocation_5357.sock"}
+[debug] [2019-08-05T22:51:25.329Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5357.sock"}
+[debug] [2019-08-05T22:51:25.342Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:25.355Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:51:25.359Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:51:25.804Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:51:25.806Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:25.809Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:25.810Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:25.811Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:26.298Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:26.298Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:51:26.298Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:51:26.308Z] {"socketPath":"/tmp/firebase_emulator_invocation_5370.sock"}
+[debug] [2019-08-05T22:51:26.310Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5370.sock"}
+[debug] [2019-08-05T22:51:26.339Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:26.516Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:51:31.186Z] Accepted request OPTIONS /peifrontend/us-central1/getUserByName --> getUserByName
+[debug] [2019-08-05T22:51:31.628Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserByName"
+[debug] [2019-08-05T22:51:31.630Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:31.635Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:31.635Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:31.635Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:32.164Z] [runtime-status] Trigger "getUserByName" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:32.164Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserByName","entryPoint":"getUserByName"}
+[debug] [2019-08-05T22:51:32.164Z] [runtime-status] Running getUserByName in mode HTTPS {}
+[debug] [2019-08-05T22:51:32.178Z] {"socketPath":"/tmp/firebase_emulator_invocation_5386.sock"}
+[debug] [2019-08-05T22:51:32.179Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5386.sock"}
+[debug] [2019-08-05T22:51:32.203Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:32.211Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getUserByName" in ~1s
+[debug] [2019-08-05T22:51:32.217Z] Accepted request POST /peifrontend/us-central1/getUserByName --> getUserByName
+[debug] [2019-08-05T22:51:32.694Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserByName"
+[debug] [2019-08-05T22:51:32.707Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:32.709Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:32.710Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:32.710Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:33.251Z] [runtime-status] Trigger "getUserByName" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:33.252Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserByName","entryPoint":"getUserByName"}
+[debug] [2019-08-05T22:51:33.252Z] [runtime-status] Running getUserByName in mode HTTPS {}
+[debug] [2019-08-05T22:51:33.265Z] {"socketPath":"/tmp/firebase_emulator_invocation_5397.sock"}
+[debug] [2019-08-05T22:51:33.267Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5397.sock"}
+[debug] [2019-08-05T22:51:33.296Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:33.488Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getUserByName" in ~1s
+[debug] [2019-08-05T22:51:34.649Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:51:35.113Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:51:35.117Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:35.121Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:35.121Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:35.121Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:35.640Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:35.641Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:51:35.641Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:51:35.662Z] {"socketPath":"/tmp/firebase_emulator_invocation_5413.sock"}
+[debug] [2019-08-05T22:51:35.664Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5413.sock"}
+[debug] [2019-08-05T22:51:35.678Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:35.687Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:51:35.694Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:51:36.159Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:51:36.161Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:36.164Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:36.165Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:36.167Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:36.690Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:36.691Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:51:36.691Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:51:36.712Z] {"socketPath":"/tmp/firebase_emulator_invocation_5424.sock"}
+[debug] [2019-08-05T22:51:36.714Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5424.sock"}
+[debug] [2019-08-05T22:51:36.752Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:36.936Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:51:38.192Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:51:38.659Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:51:38.660Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:38.663Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:38.666Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:38.667Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:39.204Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:39.204Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:51:39.204Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:51:39.215Z] {"socketPath":"/tmp/firebase_emulator_invocation_5440.sock"}
+[debug] [2019-08-05T22:51:39.217Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5440.sock"}
+[debug] [2019-08-05T22:51:39.245Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:39.440Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:51:53.961Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:51:54.451Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:51:54.452Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:54.456Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:54.458Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:54.459Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:54.960Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:54.961Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:51:54.961Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:51:54.987Z] {"socketPath":"/tmp/firebase_emulator_invocation_5459.sock"}
+[debug] [2019-08-05T22:51:54.989Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5459.sock"}
+[debug] [2019-08-05T22:51:55.003Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:55.015Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:51:55.020Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:51:55.496Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:51:55.497Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:55.500Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:55.502Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:55.503Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:56.005Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:51:56.006Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:51:56.006Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:51:56.016Z] {"socketPath":"/tmp/firebase_emulator_invocation_5471.sock"}
+[debug] [2019-08-05T22:51:56.017Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5471.sock"}
+[debug] [2019-08-05T22:51:56.050Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:51:56.237Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:51:59.083Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:51:59.588Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:51:59.589Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:51:59.593Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:51:59.596Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:51:59.596Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:00.145Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:00.145Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:00.145Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:00.158Z] {"socketPath":"/tmp/firebase_emulator_invocation_5486.sock"}
+[debug] [2019-08-05T22:52:00.160Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5486.sock"}
+[debug] [2019-08-05T22:52:00.210Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:00.404Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:21.101Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:21.574Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:21.576Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:21.578Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:21.580Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:21.580Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:22.074Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:22.074Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:22.075Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:22.095Z] {"socketPath":"/tmp/firebase_emulator_invocation_5509.sock"}
+[debug] [2019-08-05T22:52:22.097Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5509.sock"}
+[debug] [2019-08-05T22:52:22.108Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:22.117Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:22.125Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:22.609Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:22.610Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:22.613Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:22.614Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:22.616Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:22.773Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:23.186Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:23.186Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:23.186Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:23.202Z] {"socketPath":"/tmp/firebase_emulator_invocation_5520.sock"}
+[debug] [2019-08-05T22:52:23.204Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5520.sock"}
+[debug] [2019-08-05T22:52:23.277Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:23.332Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:23.337Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:23.342Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:23.346Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:23.348Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:23.493Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:23.910Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:23.910Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:23.911Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:23.946Z] {"socketPath":"/tmp/firebase_emulator_invocation_5528.sock"}
+[debug] [2019-08-05T22:52:23.948Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5528.sock"}
+[debug] [2019-08-05T22:52:23.994Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:24.191Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:27.091Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:27.608Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:27.609Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:27.614Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:27.615Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:27.622Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:28.208Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:28.208Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:28.208Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:28.224Z] {"socketPath":"/tmp/firebase_emulator_invocation_5552.sock"}
+[debug] [2019-08-05T22:52:28.226Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5552.sock"}
+[debug] [2019-08-05T22:52:28.273Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:28.476Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:28.738Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:29.258Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:29.259Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:29.262Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:29.264Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:29.265Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:29.780Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:29.780Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:29.781Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:29.806Z] {"socketPath":"/tmp/firebase_emulator_invocation_5567.sock"}
+[debug] [2019-08-05T22:52:29.807Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5567.sock"}
+[debug] [2019-08-05T22:52:29.821Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:29.830Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:29.836Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:30.333Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:30.334Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:30.338Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:30.350Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:30.350Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:30.850Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:30.850Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:30.850Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:30.874Z] {"socketPath":"/tmp/firebase_emulator_invocation_5579.sock"}
+[debug] [2019-08-05T22:52:30.876Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5579.sock"}
+[debug] [2019-08-05T22:52:30.906Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:31.091Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:37.613Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:38.122Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:38.123Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:38.127Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:38.128Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:38.129Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:38.694Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:38.694Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:38.695Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:38.707Z] {"socketPath":"/tmp/firebase_emulator_invocation_5595.sock"}
+[debug] [2019-08-05T22:52:38.708Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5595.sock"}
+[debug] [2019-08-05T22:52:38.722Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:38.733Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:38.736Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:39.215Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:39.216Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:39.220Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:39.222Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:39.223Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:39.774Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:39.774Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:39.774Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:39.787Z] {"socketPath":"/tmp/firebase_emulator_invocation_5606.sock"}
+[debug] [2019-08-05T22:52:39.788Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5606.sock"}
+[debug] [2019-08-05T22:52:39.819Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:40.016Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:42.245Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:42.764Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:42.766Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:42.774Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:42.775Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:42.775Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:43.368Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:43.369Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:43.370Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:43.386Z] {"socketPath":"/tmp/firebase_emulator_invocation_5622.sock"}
+[debug] [2019-08-05T22:52:43.388Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5622.sock"}
+[debug] [2019-08-05T22:52:43.432Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:43.559Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:43.643Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:44.078Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:44.079Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:44.083Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:44.084Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:44.085Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:44.597Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:44.598Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:44.599Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:44.612Z] {"socketPath":"/tmp/firebase_emulator_invocation_5633.sock"}
+[debug] [2019-08-05T22:52:44.613Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5633.sock"}
+[debug] [2019-08-05T22:52:44.650Z] [runtime-status] Ephemeral server used! {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:44.840Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:45.462Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:45.976Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:45.977Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:45.981Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:45.983Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:45.984Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:46.538Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:46.539Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:46.539Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:46.551Z] {"socketPath":"/tmp/firebase_emulator_invocation_5654.sock"}
+[debug] [2019-08-05T22:52:46.553Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5654.sock"}
+[debug] [2019-08-05T22:52:46.565Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:46.574Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:46.583Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:47.068Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:47.070Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:47.074Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:47.075Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:47.076Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:47.465Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:47.684Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:47.684Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:47.684Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:47.722Z] {"socketPath":"/tmp/firebase_emulator_invocation_5665.sock"}
+[debug] [2019-08-05T22:52:47.723Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5665.sock"}
+[debug] [2019-08-05T22:52:47.765Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:47.978Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:48.018Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:48.023Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:48.024Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:48.028Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:48.032Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:48.636Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:48.636Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:48.636Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:48.649Z] {"socketPath":"/tmp/firebase_emulator_invocation_5676.sock"}
+[debug] [2019-08-05T22:52:48.650Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5676.sock"}
+[debug] [2019-08-05T22:52:48.688Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:48.907Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:49.660Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:50.158Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:50.159Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:50.163Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:50.164Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:50.165Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:50.687Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:50.687Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:50.688Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:50.704Z] {"socketPath":"/tmp/firebase_emulator_invocation_5697.sock"}
+[debug] [2019-08-05T22:52:50.705Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5697.sock"}
+[debug] [2019-08-05T22:52:50.743Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:50.930Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:50.990Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:51.527Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:51.530Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:51.536Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:51.538Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:51.539Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:52.229Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:52.229Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:52.229Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:52.241Z] {"socketPath":"/tmp/firebase_emulator_invocation_5712.sock"}
+[debug] [2019-08-05T22:52:52.243Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5712.sock"}
+[debug] [2019-08-05T22:52:52.279Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:52.350Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:52.505Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:52.897Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:52.899Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:52.902Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:52.903Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:52.904Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:53.467Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:53.468Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:53.468Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:53.486Z] {"socketPath":"/tmp/firebase_emulator_invocation_5723.sock"}
+[debug] [2019-08-05T22:52:53.487Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5723.sock"}
+[debug] [2019-08-05T22:52:53.511Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:53.520Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:53.524Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:53.849Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:54.044Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:54.048Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:54.053Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:54.053Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:54.054Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:54.376Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:54.379Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:54.381Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:54.383Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:54.385Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:54.608Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:54.609Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:54.609Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:54.621Z] {"socketPath":"/tmp/firebase_emulator_invocation_5740.sock"}
+[debug] [2019-08-05T22:52:54.623Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5740.sock"}
+[debug] [2019-08-05T22:52:54.657Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:54.856Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:54.953Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:54.954Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:54.954Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:54.965Z] {"socketPath":"/tmp/firebase_emulator_invocation_5748.sock"}
+[debug] [2019-08-05T22:52:54.967Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5748.sock"}
+[debug] [2019-08-05T22:52:54.997Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:55.194Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:52:57.034Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:52:57.580Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:52:57.581Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:52:57.584Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:52:57.586Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:57.587Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:52:58.180Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:52:58.181Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:52:58.181Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:52:58.206Z] {"socketPath":"/tmp/firebase_emulator_invocation_5772.sock"}
+[debug] [2019-08-05T22:52:58.208Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5772.sock"}
+[debug] [2019-08-05T22:52:58.238Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:52:58.443Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T22:52:59.476Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:53:00.001Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:53:00.003Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:53:00.006Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:53:00.008Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:53:00.009Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:53:00.540Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:53:00.540Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:53:00.540Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:53:00.569Z] {"socketPath":"/tmp/firebase_emulator_invocation_5787.sock"}
+[debug] [2019-08-05T22:53:00.570Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5787.sock"}
+[debug] [2019-08-05T22:53:00.585Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:53:00.596Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:53:00.600Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T22:53:01.081Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T22:53:01.083Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:53:01.086Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:53:01.088Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:53:01.089Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:53:01.615Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T22:53:01.615Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T22:53:01.616Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T22:53:01.628Z] {"socketPath":"/tmp/firebase_emulator_invocation_5799.sock"}
+[debug] [2019-08-05T22:53:01.630Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_5799.sock"}
+[debug] [2019-08-05T22:53:01.706Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T22:53:01.880Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T22:58:10.604Z] File /home/akin/Documents/pei-frontend/functions/index.js changed, reloading triggers
+[debug] [2019-08-05T22:58:12.008Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[debug] [2019-08-05T22:58:12.008Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T22:58:12.013Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T22:58:12.014Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T22:58:12.014Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions: [http] function getUserById initialized (http://localhost:5000/peifrontend/us-central1/getUserById).
+[debug] [2019-08-05T23:24:58.720Z] Accepted request OPTIONS /peifrontend/us-central1/getUserById --> getUserById
+[debug] [2019-08-05T23:24:58.740Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T23:24:59.272Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserById"
+[debug] [2019-08-05T23:24:59.276Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:24:59.282Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:24:59.282Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:24:59.282Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:24:59.289Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T23:24:59.290Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:24:59.294Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:24:59.296Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:24:59.298Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:24:59.930Z] [runtime-status] Trigger "getUserById" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:24:59.930Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserById","entryPoint":"getUserById"}
+[debug] [2019-08-05T23:24:59.931Z] [runtime-status] Running getUserById in mode HTTPS {}
+[debug] [2019-08-05T23:24:59.951Z] {"socketPath":"/tmp/firebase_emulator_invocation_6739.sock"}
+[debug] [2019-08-05T23:24:59.957Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6739.sock"}
+[debug] [2019-08-05T23:24:59.967Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:24:59.968Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T23:24:59.968Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T23:24:59.978Z] {"socketPath":"/tmp/firebase_emulator_invocation_6740.sock"}
+[debug] [2019-08-05T23:24:59.979Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6740.sock"}
+[debug] [2019-08-05T23:24:59.988Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:24:59.992Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getUserById" in ~1s
+[debug] [2019-08-05T23:24:59.996Z] Accepted request POST /peifrontend/us-central1/getUserById --> getUserById
+[debug] [2019-08-05T23:25:00.008Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:25:00.022Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T23:25:00.025Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T23:25:00.562Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserById"
+[debug] [2019-08-05T23:25:00.564Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:25:00.567Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:25:00.569Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:25:00.571Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:25:00.607Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T23:25:00.608Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:25:00.612Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:25:00.614Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:25:00.615Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:25:01.150Z] [runtime-status] Trigger "getUserById" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:25:01.150Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserById","entryPoint":"getUserById"}
+[debug] [2019-08-05T23:25:01.151Z] [runtime-status] Running getUserById in mode HTTPS {}
+[debug] [2019-08-05T23:25:01.203Z] {"socketPath":"/tmp/firebase_emulator_invocation_6762.sock"}
+[debug] [2019-08-05T23:25:01.204Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6762.sock"}
+[debug] [2019-08-05T23:25:01.210Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:25:01.210Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T23:25:01.210Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T23:25:01.232Z] {"socketPath":"/tmp/firebase_emulator_invocation_6768.sock"}
+[debug] [2019-08-05T23:25:01.233Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6768.sock"}
+[debug] [2019-08-05T23:25:01.259Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:25:01.265Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:25:01.464Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T23:25:01.480Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getUserById" in ~1s
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T23:29:19.805Z] Accepted request OPTIONS /peifrontend/us-central1/getUserById --> getUserById
+[debug] [2019-08-05T23:29:19.829Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T23:29:20.417Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserById"
+[debug] [2019-08-05T23:29:20.431Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:29:20.431Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:29:20.431Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:20.431Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:20.454Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T23:29:20.456Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:29:20.460Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:29:20.461Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:20.463Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:21.008Z] [runtime-status] Trigger "getUserById" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:29:21.008Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserById","entryPoint":"getUserById"}
+[debug] [2019-08-05T23:29:21.008Z] [runtime-status] Running getUserById in mode HTTPS {}
+[debug] [2019-08-05T23:29:21.050Z] {"socketPath":"/tmp/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-08-05T23:29:21.052Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-08-05T23:29:21.075Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:29:21.077Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:29:21.078Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T23:29:21.078Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T23:29:21.085Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T23:29:21.087Z] Accepted request POST /peifrontend/us-central1/getUserById --> getUserById
+[info] i  functions: Finished "getUserById" in ~1s
+[debug] [2019-08-05T23:29:21.098Z] {"socketPath":"/tmp/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-08-05T23:29:21.099Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-08-05T23:29:21.118Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:29:21.128Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T23:29:21.131Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T23:29:21.615Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserById"
+[debug] [2019-08-05T23:29:21.617Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:29:21.622Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:29:21.623Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:21.623Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:21.657Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T23:29:21.657Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:29:21.661Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:29:21.663Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:21.664Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:22.235Z] [runtime-status] Trigger "getUserById" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:29:22.236Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserById","entryPoint":"getUserById"}
+[debug] [2019-08-05T23:29:22.236Z] [runtime-status] Running getUserById in mode HTTPS {}
+[debug] [2019-08-05T23:29:22.250Z] {"socketPath":"/tmp/firebase_emulator_invocation_6978.sock"}
+[debug] [2019-08-05T23:29:22.252Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6978.sock"}
+[debug] [2019-08-05T23:29:22.260Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:29:22.260Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T23:29:22.260Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T23:29:22.286Z] {"socketPath":"/tmp/firebase_emulator_invocation_6985.sock"}
+[debug] [2019-08-05T23:29:22.288Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6985.sock"}
+[debug] [2019-08-05T23:29:22.295Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:29:22.337Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:29:22.503Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T23:29:22.548Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getUserById" in ~1s
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T23:29:33.905Z] Accepted request OPTIONS /peifrontend/us-central1/getUserById --> getUserById
+[debug] [2019-08-05T23:29:33.919Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T23:29:34.501Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserById"
+[debug] [2019-08-05T23:29:34.507Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:29:34.508Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:29:34.509Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:34.510Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:34.543Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T23:29:34.546Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:29:34.549Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:29:34.551Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:34.553Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:35.156Z] [runtime-status] Trigger "getUserById" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:29:35.156Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserById","entryPoint":"getUserById"}
+[debug] [2019-08-05T23:29:35.156Z] [runtime-status] Running getUserById in mode HTTPS {}
+[debug] [2019-08-05T23:29:35.168Z] {"socketPath":"/tmp/firebase_emulator_invocation_7014.sock"}
+[debug] [2019-08-05T23:29:35.169Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7014.sock"}
+[debug] [2019-08-05T23:29:35.191Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:29:35.200Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getUserById" in ~1s
+[debug] [2019-08-05T23:29:35.206Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:29:35.206Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T23:29:35.206Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T23:29:35.213Z] Accepted request POST /peifrontend/us-central1/getUserById --> getUserById
+[debug] [2019-08-05T23:29:35.228Z] {"socketPath":"/tmp/firebase_emulator_invocation_7015.sock"}
+[debug] [2019-08-05T23:29:35.230Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7015.sock"}
+[debug] [2019-08-05T23:29:35.269Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:29:35.285Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T23:29:35.301Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T23:29:35.759Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserById"
+[debug] [2019-08-05T23:29:35.760Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:29:35.764Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:29:35.766Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:35.768Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:35.851Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T23:29:35.852Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:29:35.856Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:29:35.858Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:35.859Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:29:36.372Z] [runtime-status] Trigger "getUserById" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:29:36.373Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserById","entryPoint":"getUserById"}
+[debug] [2019-08-05T23:29:36.373Z] [runtime-status] Running getUserById in mode HTTPS {}
+[debug] [2019-08-05T23:29:36.391Z] {"socketPath":"/tmp/firebase_emulator_invocation_7037.sock"}
+[debug] [2019-08-05T23:29:36.394Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7037.sock"}
+[debug] [2019-08-05T23:29:36.437Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:29:36.487Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:29:36.487Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T23:29:36.488Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T23:29:36.523Z] {"socketPath":"/tmp/firebase_emulator_invocation_7044.sock"}
+[debug] [2019-08-05T23:29:36.524Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7044.sock"}
+[debug] [2019-08-05T23:29:36.556Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:29:36.658Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T23:29:36.759Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getUserById" in ~1s
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T23:31:58.357Z] Accepted request OPTIONS /peifrontend/us-central1/validateToken --> validateToken
+[debug] [2019-08-05T23:31:58.932Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "validateToken"
+[debug] [2019-08-05T23:31:58.934Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:31:58.942Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:31:58.944Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:31:58.946Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:31:59.520Z] [runtime-status] Trigger "validateToken" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:31:59.520Z] [runtime-status]  {"httpsTrigger":{},"name":"validateToken","entryPoint":"validateToken"}
+[debug] [2019-08-05T23:31:59.520Z] [runtime-status] Running validateToken in mode HTTPS {}
+[debug] [2019-08-05T23:31:59.532Z] {"socketPath":"/tmp/firebase_emulator_invocation_7134.sock"}
+[debug] [2019-08-05T23:31:59.533Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7134.sock"}
+[debug] [2019-08-05T23:31:59.548Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:31:59.560Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "validateToken" in ~1s
+[debug] [2019-08-05T23:31:59.564Z] Accepted request POST /peifrontend/us-central1/validateToken --> validateToken
+[debug] [2019-08-05T23:32:00.060Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "validateToken"
+[debug] [2019-08-05T23:32:00.063Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:32:00.065Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:32:00.067Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:00.069Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:00.623Z] [runtime-status] Trigger "validateToken" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:32:00.623Z] [runtime-status]  {"httpsTrigger":{},"name":"validateToken","entryPoint":"validateToken"}
+[debug] [2019-08-05T23:32:00.623Z] [runtime-status] Running validateToken in mode HTTPS {}
+[debug] [2019-08-05T23:32:00.635Z] {"socketPath":"/tmp/firebase_emulator_invocation_7145.sock"}
+[debug] [2019-08-05T23:32:00.637Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7145.sock"}
+[debug] [2019-08-05T23:32:00.689Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:32:01.140Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "validateToken" in ~1s
+[debug] [2019-08-05T23:32:05.146Z] Accepted request OPTIONS /peifrontend/us-central1/getUserById --> getUserById
+[debug] [2019-08-05T23:32:05.167Z] Accepted request OPTIONS /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T23:32:05.698Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserById"
+[debug] [2019-08-05T23:32:05.699Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:32:05.703Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:32:05.705Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:05.709Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:05.763Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T23:32:05.763Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:32:05.768Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:32:05.771Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:05.773Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:06.308Z] [runtime-status] Trigger "getUserById" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:32:06.308Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserById","entryPoint":"getUserById"}
+[debug] [2019-08-05T23:32:06.308Z] [runtime-status] Running getUserById in mode HTTPS {}
+[debug] [2019-08-05T23:32:06.336Z] {"socketPath":"/tmp/firebase_emulator_invocation_7164.sock"}
+[debug] [2019-08-05T23:32:06.337Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7164.sock"}
+[debug] [2019-08-05T23:32:06.352Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:32:06.365Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T23:32:06.368Z] Accepted request POST /peifrontend/us-central1/getUserById --> getUserById
+[info] i  functions: Finished "getUserById" in ~1s
+[debug] [2019-08-05T23:32:06.417Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:32:06.418Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T23:32:06.418Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T23:32:06.430Z] {"socketPath":"/tmp/firebase_emulator_invocation_7166.sock"}
+[debug] [2019-08-05T23:32:06.440Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7166.sock"}
+[debug] [2019-08-05T23:32:06.457Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:32:06.467Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getAllAccounts" in ~1s
+[debug] [2019-08-05T23:32:06.477Z] Accepted request POST /peifrontend/us-central1/getAllAccounts --> getAllAccounts
+[debug] [2019-08-05T23:32:06.964Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getUserById"
+[debug] [2019-08-05T23:32:06.969Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:32:06.970Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:32:06.973Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:06.976Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:07.025Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/akin/Documents/pei-frontend/functions","node_version":"12.1.0"}
+[info] i  functions: Beginning execution of "getAllAccounts"
+[debug] [2019-08-05T23:32:07.027Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-05T23:32:07.039Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-05T23:32:07.041Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:07.043Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/akin/Documents/pei-frontend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-05T23:32:07.593Z] [runtime-status] Trigger "getUserById" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:32:07.593Z] [runtime-status]  {"httpsTrigger":{},"name":"getUserById","entryPoint":"getUserById"}
+[debug] [2019-08-05T23:32:07.594Z] [runtime-status] Running getUserById in mode HTTPS {}
+[debug] [2019-08-05T23:32:07.609Z] {"socketPath":"/tmp/firebase_emulator_invocation_7186.sock"}
+[debug] [2019-08-05T23:32:07.611Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7186.sock"}
+[debug] [2019-08-05T23:32:07.636Z] [runtime-status] Trigger "getAllAccounts" has been found, beginning invocation! {}
+[debug] [2019-08-05T23:32:07.636Z] [runtime-status]  {"httpsTrigger":{},"name":"getAllAccounts","entryPoint":"getAllAccounts"}
+[debug] [2019-08-05T23:32:07.636Z] [runtime-status] Running getAllAccounts in mode HTTPS {}
+[debug] [2019-08-05T23:32:07.667Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:32:07.675Z] {"socketPath":"/tmp/firebase_emulator_invocation_7193.sock"}
+[debug] [2019-08-05T23:32:07.676Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_7193.sock"}
+[debug] [2019-08-05T23:32:07.730Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-05T23:32:07.868Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-05T23:32:07.930Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "getUserById" in ~1s
+[info] i  functions: Finished "getAllAccounts" in ~1s

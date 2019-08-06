@@ -56,7 +56,11 @@ const mapDispatchToProps = dispatch => ({
 
 Nav.propTypes = {
   logUserOut: PropTypes.func.isRequired,
-  isLoggedin: PropTypes.bool.isRequired
+  isLoggedin: PropTypes.bool
+};
+
+Nav.defaultProps = {
+  isLoggedin: false
 };
 
 export default connect(
