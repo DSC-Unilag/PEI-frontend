@@ -74,7 +74,7 @@ class TempLandingPage extends Component {
             <Link to="/signin">Signin</Link>
           </p>
           <p>
-            <Link to="/signup">Sign In</Link>
+            <Link to="/signup">Sign Up</Link>
           </p>
         </nav>
 
