@@ -1,0 +1,23 @@
+[debug] [2019-08-03T08:20:30.378Z] ----------------------------------------------------------------------
+[debug] [2019-08-03T08:20:30.408Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\TIMI OLUMOFIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions --project peifrontend
+[debug] [2019-08-03T08:20:30.410Z] CLI Version:   7.2.2
+[debug] [2019-08-03T08:20:30.410Z] Platform:      win32
+[debug] [2019-08-03T08:20:30.410Z] Node Version:  v10.16.0
+[debug] [2019-08-03T08:20:30.538Z] Time:          Sat Aug 03 2019 09:20:30 GMT+0100 (West Africa Standard Time)
+[debug] [2019-08-03T08:20:30.538Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-03T08:20:30.638Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-03T08:20:30.640Z] > authorizing via signed-in user
+[debug] [2019-08-03T08:20:30.640Z] [iam] checking project peifrontend for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2019-08-03T08:20:30.647Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-03T08:20:30.648Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-03T08:20:33.497Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-03T08:20:33.888Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/peifrontend:testIamPermissions  
+
+[debug] [2019-08-03T08:20:36.374Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'peifrontend'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
