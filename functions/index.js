@@ -40,7 +40,8 @@ module.exports.saveUser = functions.https.onRequest((req, res) => {
       .doc(uid)
       .set({
         username,
-        email
+        email,
+        uid
       })
       .then(docRef => {
         return res.status(201).json({
@@ -64,13 +65,13 @@ module.exports.getUser = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
     const { uid } = req.body;
     db.collection('users')
-      .doc(uid)
+      .where('uid', '==', uid)
       .get()
-      .then(doc => {
-        const data = doc.data();
+      .then(snapshot => {
+        const data = snapshot.docs.map(doc => doc.data());
         return res.status(200).json({
           status: 'success',
-          message: 'Profile Retrieved',
+          message: 'Accounts Retrieved',
           data
         });
       })

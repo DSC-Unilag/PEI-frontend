@@ -121,10 +121,6 @@ class LoadAccounts extends Component {
             type="tect"
             placeholder="e.g USD"
           />
-          {/* <PeiLabel purple>Expiration Date</PeiLabel>
-          <br />
-          <PeiInput purple type="number" placeholder="12/34" />
-          <br /> */}
           <PeiButton onClick={this.handleSubmit}>
             {isLoading ? (
               <img

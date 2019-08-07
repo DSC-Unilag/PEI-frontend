@@ -15,12 +15,13 @@ const PeiButton = ({ children, type, onClick, purple }) => (
 
 PeiButton.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.func]).isRequired,
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   purple: PropTypes.bool
 };
 
 PeiButton.defaultProps = {
-  purple: false
+  purple: false,
+  type: 'text'
 };
 export default PeiButton;

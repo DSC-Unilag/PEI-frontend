@@ -1,0 +1,14 @@
+.loaderContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.loaderContainer > div {
+  text-align: center;
+  align-self: center;
+}
+.loaderContainer > div > p {
+  color: var(--primary-color);
+  margin: 0;
+}
