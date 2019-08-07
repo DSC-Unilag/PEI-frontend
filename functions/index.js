@@ -37,7 +37,8 @@ module.exports.saveUser = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
     const { username, email, uid } = req.body;
     db.collection('users')
-      .add({
+      .doc(uid)
+      .set({
         username,
         email,
         uid
@@ -60,11 +61,35 @@ module.exports.saveUser = functions.https.onRequest((req, res) => {
   });
 });
 
+module.exports.getUser = functions.https.onRequest((req, res) => {
+  cors(req, res, () => {
+    const { uid } = req.body;
+    db.collection('users')
+      .where('uid', '==', uid)
+      .get()
+      .then(snapshot => {
+        const data = snapshot.docs.map(doc => doc.data());
+        return res.status(200).json({
+          status: 'success',
+          message: 'Accounts Retrieved',
+          data
+        });
+      })
+      .catch(error => {
+        return res.status(500).json({
+          status: 'error',
+          message: 'Something went wrong',
+          error: error.message
+        });
+      });
+  });
+});
+
 module.exports.getAllAccounts = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    const { user_id } = req.body;
+    const { uid } = req.body;
     db.collection('accounts')
-      .where('userId', '==', user_id)
+      .where('userId', '==', uid)
       .get()
       .then(snapshot => {
         const data = snapshot.docs.map(doc => doc.data());
@@ -89,30 +114,6 @@ module.exports.getUserByName = functions.https.onRequest((req, res) => {
     const { username } = req.body;
     db.collection('users')
       .where('username', '==', username)
-      .get()
-      .then(snapshot => {
-        const data = snapshot.docs.map(doc => doc.data());
-        return res.status(200).json({
-          status: 'success',
-          message: 'Profile Found',
-          data
-        });
-      })
-      .catch(error => {
-        return res.status(500).json({
-          status: 'error',
-          message: 'Something went wrong',
-          error: error.message
-        });
-      });
-  });
-});
-
-module.exports.getUserById = functions.https.onRequest((req, res) => {
-  cors(req, res, () => {
-    const { uid } = req.body;
-    db.collection('users')
-      .where('uid', '==', uid)
       .get()
       .then(snapshot => {
         const data = snapshot.docs.map(doc => doc.data());

@@ -190,7 +190,7 @@ const mapStateToProps = state => ({
   isLoggedIn: state.isLoggedIn
 });
 const mapDispatchToProps = dispatch => ({
-  login: uid => dispatch({ type: actions.USER_LOGGED_IN, payload: uid })
+  login: uid => dispatch({ type: actions.USER_LOGGED_IN, payload: { uid } })
 });
 
 SignUp.propTypes = {
