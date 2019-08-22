@@ -34,11 +34,9 @@ class User extends Component {
     })
       .then(res => res.json())
       .then(ress => {
-        console.log(uid);
         this.setState({
           userData: ress
         });
-        console.log(ress.data[0].username);
       })
       .catch(err => {
         throw err;
@@ -68,7 +66,7 @@ class User extends Component {
             {add && 'Add Account'}
             {transfer && 'Transfer Funds'}
           </h1>
-          <p>Hello {userData === null ? '' : userData.data[0].username}</p>
+          <p>Hello {userData == null ? '' : userData.data[0].username}</p>
         </div>
         {accounts && (
           <FlexContainer>
