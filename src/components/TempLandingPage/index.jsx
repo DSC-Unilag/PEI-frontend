@@ -63,7 +63,9 @@ class TempLandingPage extends Component {
       <div>
         <nav className={Styles.nav_bar}>
           <p>
-            <Link to="Home">Home</Link>
+            <Link to="Home" className={Styles.home_link}>
+              Home
+            </Link>
           </p>
           {isLoggedIn && (
             <p>
@@ -74,15 +76,29 @@ class TempLandingPage extends Component {
             <Link to="/signin">Signin</Link>
           </p>
           <p>
-            <Link to="/signup">Sign Up</Link>
+            <Link to="/signup" className={Styles.last}>
+              Sign Up
+            </Link>
           </p>
         </nav>
 
         <div className={Styles.front_content}>
+          <div className={Styles.content}>
+            <h1 className={Styles.heading}>
+              Funds Transfer Just got easier with PEI!
+            </h1>
+            {/* <h1 className={Styles.heading}></h1> */}
+            <h2>
+              Inter-Bank Transfers with ease. No Middle man. Just you and the
+              recipient!
+            </h2>
+            <Link to="/signup" className={Styles.started}>
+              Get Started
+            </Link>
+          </div>
           <img src="\images\undraw_mobile_payments_edgf.svg" alt="Conversion" />
         </div>
-
-        <div className="home_page_content" />
+        {/* <div className="home_page_content" /> */}
       </div>
     );
   }
