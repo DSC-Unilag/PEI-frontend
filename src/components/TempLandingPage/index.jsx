@@ -96,7 +96,8 @@ class TempLandingPage extends Component {
               Get Started
             </Link>
           </div>
-          <img src="\images\undraw_mobile_payments_edgf.svg" alt="Conversion" />
+          {/* <img src="/images/trans.svg" alt="Conversion" /> */}
+          <div className={Styles.img} />
         </div>
         {/* <div className="home_page_content" /> */}
       </div>

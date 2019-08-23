@@ -14,10 +14,15 @@
 }
 .content {
   padding-left: 30px;
-  flex: 5;
+  width: 600px;
+  padding-right: 10px;
+  align-self: flex-start;
+  margin-top: 10%;
 }
 .content h1 {
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  padding: 0;
+  margin: 0;
   margin-bottom: 0;
 }
 .content h2 {
@@ -48,14 +53,13 @@
   width: 100vw;
   display: flex;
   height: 200px;
+  height: 100vh;
 }
 .front_content img {
-  width: 600px;
-  height: 600px;
-  align-self: flex-start;
+  width: 600px !important;
+  height: 500px !important;
   margin-left: auto;
   margin-right: 70px;
-  flex: 1;
 }
 .loaderContainer {
   height: 100vh;
@@ -72,66 +76,22 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1083px) {
-  .front_content img {
-    width: 500px;
-    height: 500px;
-    align-self: flex-start;
-    margin-left: auto;
-    margin-right: 70px;
-    flex: 1;
-  }
-  .front_content {
-    margin-top: 50px;
-  }
+.img {
+  height: 600px;
+  width: 600px;
+  background-image: url('/images/undraw_mobile_payments_edgf.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: center;
 }
 
-@media screen and (min-width: 1083px) {
-  .front_content img {
-    width: 600px;
-    height: 600px;
-    align-self: flex-start;
-    margin-left: auto;
-    margin-right: 70px;
-    flex: 1;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .front_content img {
-    width: 450px;
-    height: 450px;
-    align-self: flex-start;
-    margin-left: auto;
-    margin-right: 70px;
-    flex: 1;
-  }
-  .front_content {
-    margin-top: 50px;
-  }
-  .content h1 {
-    font-size: 40px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .front_content img {
+@media only screen and (max-width: 850px) {
+  .img {
     display: none;
-  }
-  .front_content {
-    margin-top: 50px;
-  }
-  .content h1 {
-    font-size: 50px;
-  }
-  .content h2 {
-    line-height: 40px;
   }
   .nav_bar {
     justify-content: center;
     padding-top: 10px;
-  }
-  .front_content {
-    flex-direction: column;
   }
   .started {
     display: inline-block;
@@ -142,5 +102,12 @@
     background-color: darkslateblue;
     padding: 15px 20px;
     border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .nav_bar a {
+    padding: 8px 8px;
+    font-size: 14px;
   }
 }
