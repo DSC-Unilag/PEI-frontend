@@ -22,8 +22,6 @@
   justify-content: center;
   opacity: 0.6;
   animation: pop 3s infinite;
-  position: absolute;
-  left: 21vw;
   height: 200px;
 }
 .containerFade p {

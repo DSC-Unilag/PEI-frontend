@@ -72,14 +72,18 @@ class TempLandingPage extends Component {
               <Link to="/dashboard/accounts">Dashboard</Link>
             </p>
           )}
-          <p>
-            <Link to="/signin">Signin</Link>
-          </p>
-          <p>
-            <Link to="/signup" className={Styles.last}>
-              Sign Up
-            </Link>
-          </p>
+          {!isLoggedIn && (
+            <p>
+              <Link to="/signin">Signin</Link>
+            </p>
+          )}
+          {!isLoggedIn && (
+            <p>
+              <Link to="/signup" className={Styles.last}>
+                Sign Up
+              </Link>
+            </p>
+          )}
         </nav>
 
         <div className={Styles.front_content}>
