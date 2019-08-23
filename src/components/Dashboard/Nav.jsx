@@ -40,6 +40,9 @@ const Nav = ({ logUserOut, isLoggedin }) => {
               Logout
             </div>
           </li>
+          <Link to="/" className={Styles.navitem}>
+            Home
+          </Link>
         </ul>
       </div>
     </div>
