@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PeiInput from '../elements/PeiInput';
@@ -5,7 +6,7 @@ import PeiLabel from '../elements/PeiLabel';
 import PeiButton from '../elements/PeiButton';
 import TransferableAccounts from '../TransferableAccounts';
 import Styles from './index.module.css';
-import { getUser, getAllAccounts } from '../../api';
+import { getUserByName, getAllAccounts } from '../../api';
 
 class Transfer extends Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class Transfer extends Component {
     this.setState({
       isValidating: true
     });
-    fetch(getUser, {
+    fetch(getUserByName, {
       method: 'POST',
       cors: true,
       body: JSON.stringify({ username }),
@@ -48,7 +49,7 @@ class Transfer extends Component {
         fetch(getAllAccounts, {
           method: 'POST',
           cors: true,
-          body: JSON.stringify({ user_id: data.data[0].uid }),
+          body: JSON.stringify({ uid: data.data[0].uid }),
           headers: {
             'Content-Type': 'application/json'
           }
@@ -61,7 +62,7 @@ class Transfer extends Component {
             });
           })
           .then(r => {
-            const dataBody = { user_id: uid };
+            const dataBody = { uid };
             fetch(getAllAccounts, {
               method: 'POST',
               cors: true,

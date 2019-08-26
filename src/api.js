@@ -1,10 +1,14 @@
 export const saveUser =
-  'http://localhost:5000/peifrontend/us-central1/saveUser';
+  'https://us-central1-peifrontend.cloudfunctions.net/saveUser';
 export const getAllAccounts =
-  'http://localhost:5000/peifrontend/us-central1/getAllAccounts';
+  'https://us-central1-peifrontend.cloudfunctions.net/getAllAccounts';
 export const createAccount =
-  'http://localhost:5000/peifrontend/us-central1/createAccount';
+  'https://us-central1-peifrontend.cloudfunctions.net/createAccount';
 export const getUser =
-  'http://localhost:5000/peifrontend/us-central1/getUserByName';
+  'https://us-central1-peifrontend.cloudfunctions.net/getUser';
 export const validateToken =
-  'http://localhost:5000/peifrontend/us-central1/validateToken';
+  'https://us-central1-peifrontend.cloudfunctions.net/validateToken';
+// export const getUserById =
+//   'http://localhost:5000/peifrontend/us-central1/getUserById';
+export const getUserByName =
+  'https://us-central1-peifrontend.cloudfunctions.net/getUserByName';

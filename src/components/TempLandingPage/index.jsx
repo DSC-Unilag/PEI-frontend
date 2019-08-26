@@ -17,7 +17,7 @@ class TempLandingPage extends Component {
   }
 
   componentDidMount() {
-    const { login } = this.props;
+    const { login, logUserOut } = this.props;
     const token = localStorage.getItem('token');
     if (token) {
       fetch(validateToken, {
@@ -28,18 +28,35 @@ class TempLandingPage extends Component {
           'content-type': 'application/json'
         }
       })
-        .then(res => res.json())
-        .then(data => {
-          login(data.data);
-          this.setState({
-            isLoaded: true
-          });
+        .then(response => {
+          if (response.ok) {
+            response.json().then(data => {
+              login(data.data);
+              this.setState({
+                isLoaded: true
+              });
+            });
+          } else {
+            this.setState({
+              isLoaded: true
+            });
+            logUserOut();
+          }
+          // return response;
         })
+        // .then(res => res.json())
+        // .then(data => {
+        //   login(data.data);
+        //   this.setState({
+        //     isLoaded: true
+        //   });
+        // })
         .catch(err => {
           this.setState({
             isLoaded: true
           });
-          throw err;
+          logUserOut();
+          // throw err;
         });
     } else {
       this.setState({
@@ -63,26 +80,47 @@ class TempLandingPage extends Component {
       <div>
         <nav className={Styles.nav_bar}>
           <p>
-            <Link to="Home">Home</Link>
+            <Link to="Home" className={Styles.home_link}>
+              Home
+            </Link>
           </p>
           {isLoggedIn && (
             <p>
               <Link to="/dashboard/accounts">Dashboard</Link>
             </p>
           )}
-          <p>
-            <Link to="/signin">Signin</Link>
-          </p>
-          <p>
-            <Link to="/signup">Sign In</Link>
-          </p>
+          {!isLoggedIn && (
+            <p>
+              <Link to="/signin">Sign in</Link>
+            </p>
+          )}
+          {!isLoggedIn && (
+            <p>
+              <Link to="/signup" className={Styles.last}>
+                Sign Up
+              </Link>
+            </p>
+          )}
         </nav>
 
         <div className={Styles.front_content}>
-          <img src="\images\undraw_mobile_payments_edgf.svg" alt="Conversion" />
+          <div className={Styles.content}>
+            <h1 className={Styles.heading}>
+              Funds Transfer Just got easier with PEI!
+            </h1>
+            {/* <h1 className={Styles.heading}></h1> */}
+            <h2>
+              Inter-Bank Transfers with ease. No Middle man. Just you and the
+              recipient!
+            </h2>
+            <Link to="/signup" className={Styles.started}>
+              Get Started
+            </Link>
+          </div>
+          {/* <img src="/images/trans.svg" alt="Conversion" /> */}
+          <div className={Styles.img} />
         </div>
-
-        <div className="home_page_content" />
+        {/* <div className="home_page_content" /> */}
       </div>
     );
   }
@@ -92,7 +130,10 @@ const mapStateToProps = state => ({
 });
 const mapDispatchToProps = dispatch => ({
   login: userId =>
-    dispatch({ type: actions.USER_LOGGED_IN, payload: { uid: userId } })
+    dispatch({ type: actions.USER_LOGGED_IN, payload: { uid: userId } }),
+  logUserOut: () => {
+    dispatch({ type: actions.USER_LOGGED_OUT });
+  }
 });
 
 TempLandingPage.propTypes = {

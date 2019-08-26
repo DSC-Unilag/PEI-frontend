@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Styles from './index.module.css';
 
 const PeiButton = ({ children, type, onClick, purple }) => (
@@ -11,4 +12,16 @@ const PeiButton = ({ children, type, onClick, purple }) => (
     {children}
   </button>
 );
+
+PeiButton.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.func]).isRequired,
+  type: PropTypes.string,
+  onClick: PropTypes.func.isRequired,
+  purple: PropTypes.bool
+};
+
+PeiButton.defaultProps = {
+  purple: false,
+  type: 'text'
+};
 export default PeiButton;

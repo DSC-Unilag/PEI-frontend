@@ -23,17 +23,22 @@ class SignUp extends Component {
       email: '',
       password: '',
       isLoading: false,
-      err: ''
+      err: '',
+      redirectToSignIn: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleSubmit(e) {
-    const { signin, login } = this.props;
-    const { email, password, isLoading } = this.state;
+    const { login } = this.props;
+    let { signin } = this.props;
+    const { email, password, isLoading, redirectToSignIn } = this.state;
     e.preventDefault();
     if (!isLoading) {
+      if (redirectToSignIn) {
+        signin = true;
+      }
       if (signin) {
         this.setState({
           isLoading: true
@@ -42,12 +47,10 @@ class SignUp extends Component {
           .auth()
           .signInWithEmailAndPassword(email, password)
           .then(u => {
-            console.log(u.user.uid);
             firebase
               .auth()
               .currentUser.getIdToken(true)
               .then(idToken => {
-                // send token to backend
                 if (localStorage.getItem('token')) {
                   localStorage.removeItem('token');
                   localStorage.setItem('token', idToken);
@@ -65,11 +68,8 @@ class SignUp extends Component {
             this.setState({
               isLoading: false
             });
-            // eslint-disable-next-line no-undef
-            // localStorage.setItem('uid', u.user.uid);
           })
           .catch(err => {
-            console.log(err);
             this.setState({
               err: ErrorHandler(err.code),
               isLoading: false
@@ -94,11 +94,13 @@ class SignUp extends Component {
               headers: {
                 'Content-Type': 'application/json'
               }
+            }).then(() => {
+              this.setState({
+                redirectToSignIn: true
+              });
             });
-            console.log(u);
           })
           .catch(err => {
-            console.log(err);
             this.setState({
               err: ErrorHandler(err.code),
               isLoading: false
@@ -115,13 +117,18 @@ class SignUp extends Component {
   }
 
   render() {
-    const { signin = false, isLoggedIn } = this.props;
-    const { isLoading, err } = this.state;
+    const { isLoggedIn } = this.props;
+    let { signin = false } = this.props;
+    const { isLoading, err, redirectToSignIn } = this.state;
+    if (redirectToSignIn) {
+      signin = true;
+    }
+    console.log(signin);
     return !isLoggedIn ? (
       <>
         <div className={Styles.container}>
           <div className={Styles.form}>
-            <PeiHeading>{signin ? 'SignIn' : 'SignUp'}</PeiHeading>
+            <PeiHeading>{signin ? 'Sign In' : 'Sign Up'}</PeiHeading>
             <form>
               {signin ? (
                 ''
@@ -197,7 +204,7 @@ const mapStateToProps = state => ({
   isLoggedIn: state.isLoggedIn
 });
 const mapDispatchToProps = dispatch => ({
-  login: uid => dispatch({ type: actions.USER_LOGGED_IN, payload: uid })
+  login: uid => dispatch({ type: actions.USER_LOGGED_IN, payload: { uid } })
 });
 
 SignUp.propTypes = {
