@@ -126,6 +126,7 @@ class SignUp extends Component {
     console.log(signin);
     return !isLoggedIn ? (
       <>
+        {redirectToSignIn && <Redirect from="/signup" to="/signin" />}
         <div className={Styles.container}>
           <div className={Styles.form}>
             <PeiHeading>{signin ? 'Sign In' : 'Sign Up'}</PeiHeading>

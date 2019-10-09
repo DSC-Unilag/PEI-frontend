@@ -80,7 +80,7 @@ class TempLandingPage extends Component {
       <div>
         <nav className={Styles.nav_bar}>
           <p>
-            <Link to="Home" className={Styles.home_link}>
+            <Link to="/" className={Styles.home_link}>
               Home
             </Link>
           </p>
